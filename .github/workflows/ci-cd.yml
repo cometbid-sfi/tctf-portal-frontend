@@ -1,0 +1,281 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [dev, uat, staging, preprod, main]
+    paths:
+      - 'apps/**'
+      - 'libs/**'
+      - 'packages/**'
+    #paths-ignore:
+      #- '**/*.md'
+      #- '**/*.test.ts'
+      #- '**/*.spec.ts'
+      #- 'apps/**/tests/**'
+  pull_request:
+    branches: [dev, uat, staging, preprod, main]
+    paths:
+      - 'apps/**'
+      - 'libs/**'
+      - 'packages/**'
+    #paths-ignore:
+      #- '**/*.md'
+      #- '**/*.test.ts'
+      #- '**/*.spec.ts'
+      #- 'apps/**/tests/**'
+
+env:
+  NODE_VERSION: '20.x'
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4 
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
+
+  lint:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Install dependencies
+        run: pnpm install
+      - name: Run lint
+        run: pnpm run lint
+
+  security-check:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Install dependencies
+        run: pnpm install
+      - name: Run security audit
+        run: pnpm audit
+
+      #- name: Run Snyk security scan
+        #uses: snyk/actions/node@master
+        #env:
+          #SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      - name: Install Grype
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
+  
+      - name: Run Grype scan
+        run: |
+          grype dir:. --fail-on high --config .grype.yaml
+
+  unit-test:
+    needs: [lint, security-check]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+          
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      
+      - name: Build
+        run: pnpm build-all
+
+      - name: Run tests
+        run: pnpm test-all
+
+  build:
+    needs: [unit-test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build-all
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: |
+            **/dist
+            **/build
+            **/.next
+
+  e2e-test:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      
+          # Restore Cypress binary cache
+      - name: Cache Cypress binary
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-binary-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            cypress-binary-
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-output
+
+      # Install Cypress binary if needed
+      - name: Install Cypress binary
+        run: npx cypress install
+
+      - name: Run E2E tests
+        run: pnpm test:e2e
+        env:
+          # Pass any needed environment variables
+          CYPRESS_CACHE_FOLDER: ~/.cache/Cypress
+
+  deploy:
+    needs: [e2e-test]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: ['tctf-dashboard', 'tctf-main']  # List your apps that need deployment
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: build-output
+
+      # Install Netlify CLI
+      - name: Install Netlify CLI
+        run: npm install -g netlify-cli
+
+      - name: Deploy to Netlify
+        run: |
+          DEPLOY_URL=""
+          DEPLOY_ALIAS=""
+
+          case ${GITHUB_REF#refs/heads/} in
+            "dev")
+              DEPLOY_ALIAS="dev"
+              ;;
+            "uat")
+              DEPLOY_ALIAS="uat"
+              ;;
+            "staging")
+              DEPLOY_ALIAS="staging"
+              ;;
+            "preprod")
+              DEPLOY_ALIAS="preprod"
+              ;;
+            "main")
+              DEPLOY_ALIAS="production"
+              ;;
+          esac
+
+          if [ "$DEPLOY_ALIAS" = "production" ]; then
+            PROD_FLAG="--prod"
+          else
+            PROD_FLAG=""
+          fi
+          
+          # Get the correct site ID and build directory based on the app
+          case ${{ matrix.app }} in
+            "tctf-dashboard")
+              SITE_ID=${{ secrets.NETLIFY_DASHBOARD_SITE_ID }}
+              BUILD_DIR="apps/tctf-dashboard/dist"
+              ;;
+            "tctf-main")
+              SITE_ID=${{ secrets.NETLIFY_MAIN_SITE_ID }}
+              BUILD_DIR="apps/tctf-main/dist"
+              ;;
+          esac
+
+          netlify deploy \
+            --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
+            --site ${SITE_ID} \
+            --dir ${BUILD_DIR} \
+            $PROD_FLAG
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          #NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
