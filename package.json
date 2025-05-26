@@ -13,6 +13,11 @@
   "scripts": {
     "start:ui": "pnpm --filter ui dev",
     "start:api": "pnpm --filter api start:dev",
+    "start:main": "pnpm --filter tctf-main-portal start:dev",
+    "lint:main": "pnpm --filter tctf-main-portal lint",
+    "start:member-dashboard": "pnpm --filter tctf-member-dashboard start:dev",
+    "lint:member-dashboard": "pnpm --filter tctf-member-dashboard lint",
+    "lint-fix:member-dashboard": "pnpm --filter tctf-member-dashboard lint-fix",
     "start": "pnpm run start:ui & pnpm run start:api",
     "lint": "nx run-many --target=lint --all",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx,.mjs --cache --fix",

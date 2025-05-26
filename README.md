@@ -473,7 +473,7 @@ That's it, you are all set to use bootstrap in your Next.js application
 1. Install Tailwind CSS and its peer dependencies:
 
 ```bash
-pnpm add -D tailwindcss@latest postcss@latest autoprefixer@latest
+pnpm add -D tailwindcss postcss autoprefixer
 ```
 
 2. Creates two files:

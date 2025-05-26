@@ -1,0 +1,96 @@
+.account-settings-tabs .nav-item a {
+    padding: 16px 20px;
+    font-weight: 600;
+    color: var(--foreground);
+    background-color: transparent ! important;
+    border-radius: 8px;
+}
+
+.account-settings-tabs .nav-item a.active {
+    background-color: var(--primary) ! important;
+    color: #ffffff;
+}
+
+.input-info {
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--light-color);
+}
+
+.tab-details {
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+.btn-search {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--primary);
+    color: #ffffff;
+    width: 100%;
+}
+
+.icon {
+    color: #FF9500;
+}
+
+.icon-green {
+    color: #10B981;
+}
+
+.color-text {
+    color: var(--primary);
+    font-size: 12px;
+}
+
+.row-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-table-arrow {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: var(--primary);
+}
+
+.privacy-tab::-webkit-scrollbar {
+    display: none;
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 991px) {
+    .privacy-tab {
+        flex-direction: row !important;
+        overflow: auto;
+        gap: 0 !important;
+        flex-wrap: nowrap;
+    }
+
+    .privacy-tab .nav-item {
+        width: fit-content;
+        white-space: nowrap;
+    }
+
+    .privacy-tab .nav-item a {
+        font-size: 14px;
+    }
+
+    .privacy-tab {
+        margin-bottom: 22px;
+    }
+
+    .tab-details {
+        padding-left: 0;
+        border: none;
+    }
+}
