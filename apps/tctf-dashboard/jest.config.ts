@@ -7,4 +7,7 @@ export default {
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
   coverageDirectory: "../../coverage/apps/tctf-dashboard",
+  moduleNameMapper: {
+    "^next/image$": "<rootDir>/__mocks__/next/image.tsx",
+  },
 };
