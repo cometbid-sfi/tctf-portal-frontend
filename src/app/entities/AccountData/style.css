@@ -1,0 +1,47 @@
+.table-compares th:nth-child(2), .table-compares th:nth-child(3), .table-compares th:nth-child(4) {
+    text-align: center;
+    background: #F8FAFC;
+}
+
+.table-compares td:nth-child(2), .table-compares td:nth-child(3), .table-compares td:nth-child(4) {
+    text-align: center;
+    background: #F8FAFC;
+}
+
+.table-compares tr:last-child td {
+    border-bottom: none;
+}
+
+.table-compares th,
+.table-compares td {
+    padding: 20px;
+}
+
+.table-compares .btn-black {
+    background-color: transparent;
+    border: 1px solid var(--foreground) !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: none;
+    color: var(--foreground) !important;
+}
+
+.btn-fill-blue {
+    background-color: var(--button) !important;
+    color: var(--background) !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: none;
+    border: 1px solid var(--button);
+}
+
+.table-compares {
+    width: 100%;
+    white-space: nowrap;
+}
