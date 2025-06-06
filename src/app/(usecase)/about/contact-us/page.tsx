@@ -22,7 +22,7 @@ const ContactUsNative = () => {
                         <div className="page-navigation">
                             <Link href="/">Home</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
-                            <Link href="/project">Projects</Link>
+                              <Link href="/about">Our Community</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
                             <span>Contact Us</span>
                         </div>

@@ -31,7 +31,7 @@ const Support = () => {
               <span>
                 <Image src={AltArrow} alt="Icon" />
               </span>
-              <Link href="/project">Support</Link>
+              <Link href="/project">Our Community</Link>
               <span>
                 <Image src={AltArrow} alt="Icon" />
               </span>

@@ -31,11 +31,12 @@ const topCommitters = [
         title: 'Nominations & Voting',
         description: 'Anyone can nominate a community member for these awards. Once nominations are collected, the community is invited to vote to determine the winners for the Top Committer, Top Contributor, and Top Newcomer Evangelist awards. The Lifetime Achievement award winner will be selected by the CometBid Foundation team.',
     },
-    {
-        id: 6,
-        title: 'Past Winners',
-        description: 'See the Past Winners of the CometBid Community Awards.',
-    },
+    // {
+    //     id: 6,
+    //     title: 'Past Winners',
+    //     description: 'See the Past Winners of the CometBid Community Awards.',
+    //     Linkurl:""
+    // },
 ];
 
 
@@ -56,6 +57,10 @@ const Awards = () => {
                     <div className="d-flex align-items-center justify-content-between">
                         <div className="page-navigation">
                             <Link href="/">Home</Link>
+                             <span>
+                            <Image src={AltArrow} alt="Icon" />
+                            </span>
+                            <Link href="/resources">Recources</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
                             <span>Awards & Recognition</span>
                         </div>
@@ -80,13 +85,20 @@ const Awards = () => {
                                 <div className="border-bottom-section" key={committer.id}>
                                     <div className="page-title">
                                         <h3>{committer.title}</h3>
+
                                     </div>
                                     <div className="page-description mt-3">
-                                        <p>{committer.description}</p>
+                                        <p> {committer.description}</p>
+                                        </div>
                                     </div>
-                                </div>
+                                    
                             ))}
+                                                   <div className="past-winners-section">
+                                    <h3><strong>Past Winners</strong></h3>
+                                    <p className="mt-3 text-muted small ">See the <Link href="/awards"  className="text-primary"> Past Winners</Link> of the CometBid Community Awards.</p>
+                                    </div>
                         </div>
+ 
                         <div className="col-lg-3">
                             <Sidebar />
                         </div>

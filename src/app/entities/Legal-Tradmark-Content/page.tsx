@@ -132,7 +132,7 @@ const LegaltradmarcontentkPage = () => {
               <span>
                 <Image src={AltArrow} alt="Icon" />
               </span>
-              <Link href="/project">Recourses</Link>
+              <Link href="/legal-trademark">Legal Framework</Link>
               <span>
                 <Image src={AltArrow} alt="Icon" />
               </span>

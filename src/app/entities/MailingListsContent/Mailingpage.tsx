@@ -1,17 +1,34 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import AltArrow from "../../../assets/Images/alt-arrow.svg";
 import material from "../../../assets/Images/material-symbols_info-rounded.jpg";
 import "./style.css";
+import { Pagination } from "react-bootstrap";
 
 const mailingLists = [
   { name: "2-dev", description: "2 developer discussions" },
   { name: "2-Security", description: "2 security list" },
   { name: "4diac-dev", description: "4diac developer discussions" },
   { name: "4diac-security", description: "4diac Security list" },
+   
 ];
+const newsPerPage = 4;
+
 const MailingListContentPage = () => {
+
+      const [currentPage, setCurrentPage] = useState(1);
+      const indexOfLastNews = currentPage * newsPerPage;
+      const indexOfFirstNews = indexOfLastNews - newsPerPage;
+      const currentNews = mailingLists.slice(indexOfFirstNews, indexOfLastNews);
+      const totalPages = Math.ceil(mailingLists.length / newsPerPage);
+  
+      const handlePageChange = (pageNumber : any) => {
+          setCurrentPage(pageNumber);
+      };
+  
+
   return (
     <>
       <section className="hero-section-common project-hero-section position-relative mt-80">
@@ -38,7 +55,7 @@ const MailingListContentPage = () => {
               <span>
                 <Image src={AltArrow} alt="Icon" />
               </span>
-              <Link href="/project">Projects</Link>
+              <Link href="/project">Resources</Link>
               <span>
                 <Image src={AltArrow} alt="Icon" />
               </span>
@@ -98,9 +115,9 @@ const MailingListContentPage = () => {
                     </tr>
                   </thead>
                   <tbody>
-                       {mailingLists.map((list, index) => (
+                       {currentNews.map((list, index) => (
       <tr key={index}>
-        <td className="table-data">{list.name}</td>
+        <td className="table-data">  <Link href={`/maling/${list.name}`}>{list.name}</Link></td>
         <td className="table-data-2">{list.description}</td>
       </tr>
     ))}
@@ -109,8 +126,23 @@ const MailingListContentPage = () => {
                   </tbody>
                 </table>
               </div>
+              <div className="pagination-section d-flex justify-content-center mt-4">
+                        <Pagination>
+                            <Pagination.Prev onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} />
+                            {[...Array(totalPages)].map((_, index) => (
+                                <Pagination.Item
+                                    key={index}
+                                    active={index + 1 === currentPage}
+                                    onClick={() => handlePageChange(index + 1)}
+                                >
+                                    {index + 1}
+                                </Pagination.Item>
+                            ))}
+                            <Pagination.Next onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} />
+                        </Pagination>
+                    </div>
             </div>
-
+ 
             {/* Right Column - Sidebars */}
             <div className="col-lg-3">
               {/* Mailing List Card */}
@@ -120,36 +152,36 @@ const MailingListContentPage = () => {
                 
                 <ul className="list-unstyled mb-0">
                     <li className="text-decoration-none text-dark d-block mb-2">
-                         <a
-                      href="#"
+                         <Link
+                      href="/mailing-list"
                       className="text-decoration-none text-dark d-block mb-2 link-text"
                     >
                   View all Mailing List
-                  </a>
+                  </Link>
                 </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/mailing-list"
                       className="text-decoration-none text-dark d-block mb-2 link-text"
                     >
                       View Archived Mailing List
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/about/privacy-policy"
                       className="text-decoration-none text-dark d-block mb-2 link-text"
                     >
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      href="/about/terms-use"
                       className="text-decoration-none text-dark d-block link-text"
                     >
                       Terms of Use
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -166,7 +198,7 @@ const MailingListContentPage = () => {
                   <br />
                   must have an CometBid.org account.
                 </p>
-                <button className="w-100 btn-login-text">Login</button>
+                <button className="w-100 btn-login-text"><Link href="/login">Login</Link></button>
               </div>
             </div>
           </div>

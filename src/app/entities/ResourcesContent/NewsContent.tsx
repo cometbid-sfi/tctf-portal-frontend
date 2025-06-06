@@ -13,6 +13,7 @@ import News3 from "../../../assets/Images/news3.svg"
 import News4 from "../../../assets/Images/news4.svg"
 import News5 from "../../../assets/Images/news5.svg"
 import { Pagination } from "react-bootstrap";
+import Sidebar from "@/component/Sidebar/Sidebar";
 
 const news = [
     {
@@ -138,7 +139,7 @@ const NewsContent = () => {
                         <div className="page-navigation">
                             <Link href="/">Home</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
-                            <Link href="/recourses">Recourses</Link>
+                            <Link href="/resources">Recources</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
                             <span>CometBid News</span>
                         </div>
@@ -156,7 +157,7 @@ const NewsContent = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-8">
+                        <div className="col-lg-9">
                             <div className="news-list">
                                 {currentNews.map((news) => (
                                     <div className="news-item" key={news.id}>
@@ -209,18 +210,18 @@ const NewsContent = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-4">
-                            <div className="sidebar-item">
+                        <div className="col-lg-3">
+                            {/* <div className="sidebar-item">
                                 <div className="sidebar-title">
                                     <h3>Recent Posts</h3>
                                 </div>
                                 <div className="box-links">
                                     <div className="link-item">
-                                        <div className="link-title">Event</div>
+                                        <div className="link-title"> <Link href="/announcements"> Event</Link></div>
                                         <div className="link-description">Submit an CometBid related Event.</div>
                                     </div>
                                     <div className="link-item">
-                                        <div className="link-title">News</div>
+                                        <div className="link-title"> <Link href="/news"> News</Link></div>
                                         <div className="link-description">Submit an CometBid related News.</div>
                                     </div>
 
@@ -228,9 +229,10 @@ const NewsContent = () => {
                                         <li><Link href="#">My Submissions</Link></li>
                                     </ul>
 
-                                    <p className="text-black">Please <Link href="/contact">contact</Link> us to request edits to your content.</p>
+                                    <p className="text-black">Please <Link href="/contact-us">contact</Link> us to request edits to your content.</p>
                                 </div>
-                            </div>
+                            </div> */}
+                            <Sidebar />
                         </div>
                     </div>
                 </div>

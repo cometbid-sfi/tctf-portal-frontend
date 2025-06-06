@@ -40,7 +40,7 @@
 .maling-list-text-dicription{
     font-size: 16px;
     line-height: 30px;
-    color:#000000;
+    color: var(--lightTitle);
 }
 
 .mailing-list-card-text{

@@ -68,6 +68,7 @@
     font-size: 14px;
     font-weight: 600;
     color: var(--lightTitle);
+    margin-top: auto;
 }
 
 .post-author svg {

@@ -221,3 +221,57 @@
     font-size: 14px;
     font-weight: 600;
 }
+
+.d-text-doted{
+    color: var(--lightTitle) !important
+}
+
+.section-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.section-box {
+  flex: 1 1 calc(14.28% - 16px); /* 100% / 7 - gap */
+  background-color: #f4f4f4;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.section-box:hover {
+  background-color: #1a73e8;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.freedom-list{
+color: var(--lightTitle);
+}
+
+.membership-text{
+  color: var(--lightTitle);
+
+}
+
+.Councils-text{
+      color: var(--lightTitle);
+
+}
+
+.table-data-text{
+     color: var(--lightTitle) !important
+}
+
+.Minutes-text-description{
+    
+     color: var(--lightTitle) !important
+
+}

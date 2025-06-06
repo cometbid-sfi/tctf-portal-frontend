@@ -58,8 +58,10 @@ const ResourcrsFramework = () => {
                     <div className="d-flex align-items-center justify-content-between">
                         <div className="page-navigation">
                             <Link href="/">Home</Link>
+                             <span><Image src={AltArrow} alt="Icon" /></span>
+                            <Link href="/about">Our Community</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
-                            <span>Services</span>
+                            <span>Legal Resources</span>
                         </div>
                     </div>
                 </div>

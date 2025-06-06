@@ -47,7 +47,7 @@ const CSFpubliclicenseNativePage = () => {
             <section className="hero-section-common project-hero-section position-relative mt-80">
                 <div className="container">
                     <div className="hero-content text-center box-main-text">
-                        <h1 className="hero-title">CSF Public  &<span> License</span></h1>
+                        <h1 className="hero-title">TCT Foundation Public &<span> License</span></h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem<br/>
                          Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,</p>
                     </div>
@@ -61,9 +61,9 @@ const CSFpubliclicenseNativePage = () => {
                         <div className="page-navigation">
                             <Link href="/">Home</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
-                            <Link href="/project">Projects</Link>
+                            <Link href="/about">Our Community</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
-                            <span>CSF Public License</span>
+                            <span> Public License</span>
                         </div>
                     </div>
                 </div>

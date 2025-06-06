@@ -151,6 +151,10 @@ const BlogContent = () => {
                     <div className="d-flex align-items-center justify-content-between">
                         <div className="page-navigation">
                             <Link href="/">Home</Link>
+                             <span>
+                            <Image src={AltArrow} alt="Icon" />
+                            </span>
+                            <Link href="/resources">Recources</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
                             <span>Blog & Video</span>
                         </div>

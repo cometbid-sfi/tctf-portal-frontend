@@ -1,9 +1,11 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import AltArrow from "../../../assets/Images/alt-arrow.svg";
 import projectmanagement from "../../../assets/Images/material-symbols_info-rounded.jpg"
+import { Pagination } from "react-bootstrap";
 
 const forumData = [
     {
@@ -100,7 +102,19 @@ const forumData = [
 
 ];
 
+const newsPerPage = 6;
+
+
 const ForumsPage = () => {
+    const [currentPage, setCurrentPage] = useState(1);
+    const indexOfLastNews = currentPage * newsPerPage;
+    const indexOfFirstNews = indexOfLastNews - newsPerPage;
+    const currentfrom = forumData.slice(indexOfFirstNews, indexOfLastNews);
+    const totalPages = Math.ceil(forumData.length / newsPerPage);
+    
+    const handlePageChange = (pageNumber: any) => {
+      setCurrentPage(pageNumber);
+    };
     return (
         <>
             <section className="hero-section-common project-hero-section position-relative mt-80">
@@ -121,7 +135,7 @@ const ForumsPage = () => {
                         <div className="page-navigation">
                             <Link href="/">Home</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
-                            <Link href="/project">Projects</Link>
+                            <Link href="/resources">Recources</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
                             <span>Forums</span>
                         </div>
@@ -155,7 +169,7 @@ const ForumsPage = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {forumData.map((forum, index) => (
+                                {currentfrom.map((forum, index) => (
                                     <tr key={index}>
                                         {/* Forum Column with Icon + Name + Description */}
                                         <td>
@@ -169,7 +183,7 @@ const ForumsPage = () => {
                                                     />
                                                 </div>
                                                 <div className="forum-info">
-                                                    <h6 className="mb-1 fw-semibold info-text">{forum.title}</h6>
+                                                    <h6 className="mb-1 fw-semibold info-text"><Link href="" >{forum.title}</Link></h6>
                                                     <p className="mb-0 small text-muted info-text-dicription">
                                                         {forum.description}
                                                     </p>
@@ -200,6 +214,27 @@ const ForumsPage = () => {
                             </tbody>
                         </table>
                     </div>
+                    <div className="pagination-section d-flex justify-content-center mt-4">
+            <Pagination>
+              <Pagination.Prev
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+              />
+              {[...Array(totalPages)].map((_, index) => (
+                <Pagination.Item
+                  key={index}
+                  active={index + 1 === currentPage}
+                  onClick={() => handlePageChange(index + 1)}
+                >
+                  {index + 1}
+                </Pagination.Item>
+              ))}
+              <Pagination.Next
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+              />
+            </Pagination>
+          </div>
                 </div>
             </section>
 

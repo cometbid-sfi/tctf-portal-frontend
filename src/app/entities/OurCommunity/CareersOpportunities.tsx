@@ -57,8 +57,10 @@ const CareersOpportunities = () => {
                     <div className="d-flex align-items-center justify-content-between">
                         <div className="page-navigation">
                             <Link href="/">Home</Link>
+                              <span><Image src={AltArrow} alt="Icon" /></span>
+                             <Link href="/about">Our Community</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
-                            <span>Careers and Opportunities</span>
+                            <span>Careers</span>
                         </div>
                     </div>
                 </div>
@@ -127,7 +129,7 @@ const CareersOpportunities = () => {
                                                 <p>Location: Remote</p>
                                             </div>
                                             <div className="table-box-item-link">
-                                                <Link href="#">View Details</Link>
+                                                <Link href="/apply_form">View Details</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -138,7 +140,7 @@ const CareersOpportunities = () => {
                                                 <p>Location: Remote</p>
                                             </div>
                                             <div className="table-box-item-link">
-                                                <Link href="#">View Details</Link>
+                                                <Link href="/apply_form">View Details</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -149,7 +151,7 @@ const CareersOpportunities = () => {
                                                 <p>Location: Remote</p>
                                             </div>
                                             <div className="table-box-item-link">
-                                                <Link href="#">View Details</Link>
+                                                <Link href="/apply_form">View Details</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -160,7 +162,7 @@ const CareersOpportunities = () => {
                                                 <p>Location: Remote</p>
                                             </div>
                                             <div className="table-box-item-link">
-                                                <Link href="#">View Details</Link>
+                                                <Link href="/apply_form">View Details</Link>
                                             </div>
                                         </div>
                                     </div>

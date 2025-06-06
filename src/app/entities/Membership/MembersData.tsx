@@ -288,7 +288,7 @@ const MembersData = () => {
                         <div className="page-navigation">
                             <Link href="/">Home</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
-                            <Link href="/collaborations">CSF Membership</Link>
+                            <Link href="/csf-membership/benefits">CSF Membership</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
                             <Link href="/collaborations">Explore our Members</Link>
                         </div>

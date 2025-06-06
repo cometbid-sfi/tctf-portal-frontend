@@ -56,11 +56,11 @@ const LogoSpecificationsContantPage = () => {
               <span>
                 <Image src={AltArrow} alt="Icon" />
               </span>
-              <Link href="/project">Projects</Link>
+              <Link href="">Learning</Link>
               <span>
                 <Image src={AltArrow} alt="Icon" />
               </span>
-              <span>Logo Specifications</span>
+              <span>Incubator Programs</span>
             </div>
           </div>
         </div>

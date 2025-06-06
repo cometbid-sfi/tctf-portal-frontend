@@ -74,6 +74,8 @@ const Structure = () => {
                         <div className="page-navigation">
                             <Link href="/">Home</Link>
                             <span><Image src={AltArrow} alt="Icon" /></span>
+                             <Link href="/about">Our Community</Link>
+                            <span><Image src={AltArrow} alt="Icon" /></span>
                             <span>Structure</span>
                         </div>
                     </div>

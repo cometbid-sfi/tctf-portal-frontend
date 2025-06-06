@@ -193,11 +193,11 @@ const CTFLeadershipPage = () => {
               <span>
                 <Image src={AltArrow} alt="Icon" />
               </span>
-              <Link href="/project">Projects</Link>
+              <Link href="/project">Our Community</Link>
               <span>
                 <Image src={AltArrow} alt="Icon" />
               </span>
-              <span>CSF Leaderships</span>
+              <span>TCTF Trainings</span>
             </div>
           </div>
         </div>

@@ -29,9 +29,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                     <div className="page-navigation">
                         <Link href="/">Home</Link>
                         <span><Image src={AltArrow} alt="Icon" /></span>
-                        <Link href="/project">Projects</Link>
+                        <Link href="">Learning</Link>
                         <span><Image src={AltArrow} alt="Icon" /></span>
-                        <span>CSF Incubator programs</span>
+                        <span>Incubator Programs</span>
                     </div>
                 </div>
             </div>

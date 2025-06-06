@@ -24,7 +24,7 @@ const Footer = () => {
     };
     return (
         <>
-            <div className="footer mt-80">
+            <div className="footer mt-80" id="footer-sec">
                 <div className="container-fluid">
                     <div className="footer-content">
                         <div className="company-info w-20">
@@ -53,7 +53,7 @@ const Footer = () => {
                                 <li><Link href="/project">Projects</Link></li>
                                 <li><Link href="/collaborations">Collaborations</Link></li>
                                 <li><Link href="/csf-membership/benefits">Membership</Link></li>
-                                <li><Link href="/csf-leadership">CSF Leaderships</Link></li>
+                                <li><Link href="/csf-leadership">CSF Training</Link></li>
                                 <li><Link href="/our-partner">Corporate Sponsorship</Link></li>
                             </ul>
                         </div>
@@ -82,7 +82,7 @@ const Footer = () => {
                             <h4>More</h4>
                             <ul>
                                 <li><Link href="/security">Report a Vulnerability</Link></li>
-                                <li><Link href="/https://www.bugzilla.org/">Report Bugs</Link></li>
+                                <li><Link href="https://www.bugzilla.org/">Report Bugs</Link></li>
                                 <li><Link href="/mailing-list">Mailing Lists</Link></li>
                                 <li><Link href="/contact-us">Contact Us</Link></li>
                                 <li><Link href="/support">Support</Link></li>

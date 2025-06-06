@@ -1,14 +1,19 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import "./style.css";
 import AltArrow from "../../../assets/Images/alt-arrow.svg";
+import Arrow from "../../../assets/Images/arrow.svg";
 import Community from "../../../assets/Images/community.svg";
 import News2 from "../../../assets/Images/news1.svg";
 import News3 from "../../../assets/Images/news2.svg";
 import News4 from "../../../assets/Images/news3.svg";
 import News5 from "../../../assets/Images/news4.svg";
 import News6 from "../../../assets/Images/news5.svg";
+import { Pagination } from "react-bootstrap";
+import Sidebar from "@/component/Sidebar/Sidebar";
+
 const newsletterItems = [
     {
         id: 1,
@@ -54,16 +59,31 @@ const newsletterItems = [
     },
 ];
 
+const newsPerPage = 3;
+
 const NewsletterContent = () => {
+    const [currentPage, setCurrentPage] = useState(1);
+    const indexOfLastNews = currentPage * newsPerPage;
+    const indexOfFirstNews = indexOfLastNews - newsPerPage;
+    const currentNews = newsletterItems.slice(indexOfFirstNews, indexOfLastNews);
+    const totalPages = Math.ceil(newsletterItems.length / newsPerPage);
+
+    const handlePageChange = (pageNumber : any) => {
+        setCurrentPage(pageNumber);
+    };
+
     return (
         <>
             {/* Hero Section Start Here */}
             <section className="hero-section-common blog-hero-section position-relative mt-80">
                 <div className="container">
                     <div className="hero-content text-center">
-                        <h1 className="hero-title">CTF <span>Newsletter</span></h1>
+                        <h1 className="hero-title">TCT Foundation <span>Newsletter</span></h1>
                         <p className="hero-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,</p>
                     </div>
+                    <div className="border-button mt-32 text-center">
+                                <Link href="#footer-sec"><button className="btn btn-primary">Subscribe  <Image src={Arrow} alt="Icon" /></button></Link>
+                            </div>
                 </div>
             </section>
             {/* Hero Section End Here */}
@@ -74,6 +94,9 @@ const NewsletterContent = () => {
                     <div className="d-flex align-items-center justify-content-between">
                         <div className="page-navigation">
                             <Link href="/">Home</Link>
+                            <span><Image src={AltArrow} alt="Icon" /></span>
+                            <Link href="/resources">Recources</Link>
+                            
                             <span><Image src={AltArrow} alt="Icon" /></span>
                             <span>Newsletter</span>
                         </div>
@@ -105,6 +128,7 @@ const NewsletterContent = () => {
                                 <h4>Raising the Security Bar: CT Foundation Rapid Security Reviews Launching in 2025</h4>
                                 <p>Supported by Our Member Organizations, the Cometbid Foundation Provides the Community With Intellectual Property, Mentorship, Marketing, Event and IT Services.</p>
                             </div>
+                             
                         </div>
                     </div>
                 </div>
@@ -120,7 +144,7 @@ const NewsletterContent = () => {
                     <div className="row mt-5">
                         <div className="col-md-9">
                             <div className="newsletter-list">
-                                {newsletterItems.map(item => (
+                                {currentNews.map(item => (
                                     <div className="newsletter-item" key={item.id}>
                                         <div className="newsletter-item-left">
                                             <Image src={item.image} alt="Icon" />
@@ -134,20 +158,25 @@ const NewsletterContent = () => {
                             </div>
                         </div>
                         <div className="col-md-3">
-                            <div className="sidebar-item">
                                 <div className="sidebar-title">
-                                    <h3>More Updates</h3>
+                                        <Sidebar />
                                 </div>
-                                <div className="box-links">
-                                    <ul className="link-list">
-                                        <li><Link href="/press-releases">New Project Proposals</Link></li>
-                                        <li><Link href="/press-releases">New Project Release</Link></li>
-                                        <li><Link href="/press-releases">Upcoming Events</Link></li>
-                                    </ul>
-                                    <p className="text-black">Please <Link href="/contact">contact</Link> us to request edits to your content.</p>
-                                </div>
-                            </div>
                         </div>
+                    </div>
+                     <div className="pagination-section d-flex justify-content-center mt-4">
+                        <Pagination>
+                            <Pagination.Prev onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} />
+                            {[...Array(totalPages)].map((_, index) => (
+                                <Pagination.Item
+                                    key={index}
+                                    active={index + 1 === currentPage}
+                                    onClick={() => handlePageChange(index + 1)}
+                                >
+                                    {index + 1}
+                                </Pagination.Item>
+                            ))}
+                            <Pagination.Next onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} />
+                        </Pagination>
                     </div>
                 </div>
             </section>

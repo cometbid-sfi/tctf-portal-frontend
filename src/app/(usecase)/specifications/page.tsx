@@ -14,6 +14,7 @@ import Microprofile from "../../../assets/Images/microprofile-logo.png";
 import Orc from "../../../assets/Images/orc-logo.png";
 import Osgi from "../../../assets/Images/osgi-alliance-logo.svg";
 import Sparkplug from "../../../assets/Images/sparkplug-logo.png";
+import AltArrow from "../../../assets/Images/alt-arrow.svg";
 
 import "./style.css";
 import Image from "next/image";
@@ -145,6 +146,20 @@ const pagescomponent = () => {
                     </div>
                 </div>
             </section>
+
+              <section className="page-navigation-section mt-5">
+        <div className="container">
+          <div className="d-flex align-items-center justify-content-between">
+            <div className="page-navigation">
+              <Link href="/">Home</Link>
+              <span><Image src={AltArrow} alt="Icon" /></span>
+              <Link href="/project">Projects</Link>
+              <span><Image src={AltArrow} alt="Icon" /></span>
+              <span>Specifications</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
             <section className="participate-section mt-80">
                 <div className="container">

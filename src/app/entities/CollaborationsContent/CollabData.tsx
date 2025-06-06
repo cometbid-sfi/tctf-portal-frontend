@@ -159,15 +159,15 @@ const CollabData = () => {
                     <div className="row">
                         {boxes.map((box) => (
                             <div className="col-lg-6 mb-4" key={box.id}>
-                                <div className="border-box">
+                                <div className="border-box-d">
                                     <div className="box-inner">
                                         <div className="box-icon">
                                             <Image src={box.icon} alt="Icon" />
                                             <div className="count">{box.count}</div>
                                         </div>
-                                        <div className="box-content">
-                                            <h3>{box.title}</h3>
-                                            <p>{box.description}</p>
+                                        <div className="box-content  ">
+                                            <h3 className="Collaborating-text-d">{box.title}</h3>
+                                            <p className="Collaborating-text-d">{box.description}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -185,7 +185,7 @@ const CollabData = () => {
                         <div className="page-title">
                             <h2>Start a New Collaboration</h2>
                         </div>
-                        <p>The CometBid Foundation provides multiple services to support industry Whether you intend on contentionsclipse technologies that are important to your product strategy, or simply want to explore a specific innovation area with like-minded organisations, the CometBid Foundation is the open source home for industry collaboration.</p>
+                        <p className=" collabration-text" >The CometBid Foundation provides multiple services to support industry Whether you intend on contentionsclipse technologies that are important to your product strategy, or simply want to explore a specific innovation area with like-minded organisations, the CometBid Foundation is the open source home for industry collaboration.</p>
                     </div>
                     <div className="row justify-content-center">
                         <div className="col-lg-9">
