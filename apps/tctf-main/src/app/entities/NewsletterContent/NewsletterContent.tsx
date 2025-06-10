@@ -86,7 +86,7 @@ const NewsletterContent = () => {
   const currentNews = newsletterItems.slice(indexOfFirstNews, indexOfLastNews);
   const totalPages = Math.ceil(newsletterItems.length / newsPerPage);
 
-  const handlePageChange = (pageNumber: any) => {
+  const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
   };
 

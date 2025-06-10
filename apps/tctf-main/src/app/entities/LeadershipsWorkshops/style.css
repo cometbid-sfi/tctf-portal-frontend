@@ -20,7 +20,7 @@
 .custom-card-subheading {
   font-size: 14px;
   font-weight: 500;
-  color: #1A14A7;
+  color: #1a14a7;
   display: block;
   margin-bottom: 4px;
 }
@@ -45,15 +45,15 @@
 .custom-card-content {
   text-align: left;
 }
-.banner-leadership-workshops-section{
-    height: 269px;
-    border-radius: 50px;
+.banner-leadership-workshops-section {
+  height: 269px;
+  border-radius: 50px;
 }
- .box-text-heding{
-    font-size: 40px;
-    font-weight: bold;
-    margin: 18px 0;
-    line-height: 70px;
+.box-text-heding {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 18px 0;
+  line-height: 70px;
 }
 @media (max-width: 767px) {
   .custom-card {

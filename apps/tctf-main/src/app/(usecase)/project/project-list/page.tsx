@@ -1,12 +1,12 @@
 import React from "react";
-import ProjectListContent from "@/app/entities/ProjectContent/ListContent";
+import ProjectListContent from "../../../entities/ProjectContent/ListContent";
 
 const ProjectList = () => {
-    return (
-        <>
-            <ProjectListContent />
-        </>
-    );
+  return (
+    <>
+      <ProjectListContent />
+    </>
+  );
 };
 
 export default ProjectList;

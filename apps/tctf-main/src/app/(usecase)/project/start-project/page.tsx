@@ -1,12 +1,12 @@
 import React from "react";
-import StartProjectContent from "@/app/entities/ProjectContent/StartProjectContent";
+import StartProjectContent from "../../../entities/ProjectContent/StartProjectContent";
 
 const StartProject = () => {
-    return (
-        <>
-            <StartProjectContent />
-        </>
-    );
+  return (
+    <>
+      <StartProjectContent />
+    </>
+  );
 };
 
 export default StartProject;

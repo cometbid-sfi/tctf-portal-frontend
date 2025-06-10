@@ -1,12 +1,12 @@
-import ResearchWorkspage from '@/app/entities/ResearchWorksPage/page'
-import React from 'react'
+import ResearchWorkspage from "../../entities/ResearchWorksPage/page";
+import React from "react";
 
-const ResearchWorks =()=> {
+const ResearchWorks = () => {
   return (
     <div>
-        <ResearchWorkspage/>
+      <ResearchWorkspage />
     </div>
-  )
-}
+  );
+};
 
-export default ResearchWorks
+export default ResearchWorks;

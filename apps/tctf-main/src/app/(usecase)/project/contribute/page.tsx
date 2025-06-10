@@ -1,12 +1,12 @@
 import React from "react";
-import ContributeContent from "@/app/entities/ProjectContent/ContributeContent";
+import ContributeContent from "../../../entities/ProjectContent/ContributeContent";
 
 const Contribute = () => {
-    return (
-        <>
-            <ContributeContent /> 
-        </>
-    );
+  return (
+    <>
+      <ContributeContent />
+    </>
+  );
 };
 
 export default Contribute;

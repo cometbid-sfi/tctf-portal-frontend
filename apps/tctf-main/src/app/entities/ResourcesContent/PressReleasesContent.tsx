@@ -83,7 +83,7 @@ const PressReleases = () => {
   const currentNews = newsData.slice(indexOfFirstNews, indexOfLastNews);
   const totalPages = Math.ceil(newsData.length / newsPerPage);
 
-  const handlePageChange = (pageNumber: any) => {
+  const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
   };
 

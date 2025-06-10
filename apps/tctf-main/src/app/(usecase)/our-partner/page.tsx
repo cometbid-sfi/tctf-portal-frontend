@@ -1,12 +1,12 @@
 import React from "react";
-import PartnerContent from "@/app/entities/PartnerContent/PartnerContent";
+import PartnerContent from "../../entities/PartnerContent/PartnerContent";
 
 const OurPartner = () => {
-    return (
-        <>
-            <PartnerContent />
-        </>
-    );
+  return (
+    <>
+      <PartnerContent />
+    </>
+  );
 };
 
 export default OurPartner;

@@ -1,15 +1,12 @@
-
-import MailingListContentPage from "@/app/entities/MailingListsContent/Mailingpage";
+import MailingListContentPage from "../../entities/MailingListsContent/Mailingpage";
 import React from "react";
 
-
-
 const MailingList = () => {
-    return (
-        <>
-          <MailingListContentPage/>
-        </>
-    );
+  return (
+    <>
+      <MailingListContentPage />
+    </>
+  );
 };
 
 export default MailingList;

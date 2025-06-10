@@ -38,8 +38,6 @@
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
 }
 
-
-
 .contact-wrapper {
   display: flex;
   justify-content: space-between;
@@ -106,7 +104,6 @@
   border: none;
   border-bottom: 1px solid var(--lightTitle) !important;
   outline: none;
-
 }
 
 .submit-btn {
@@ -124,8 +121,6 @@
   font-size: 40px !important;
   font-weight: bold !important;
 }
-
-
 
 .contactus-info-group {
   display: flex;

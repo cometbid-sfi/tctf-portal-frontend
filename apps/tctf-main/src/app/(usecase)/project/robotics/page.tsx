@@ -1,14 +1,12 @@
-
-import RoboticsPage from "@/app/entities/ProjectContent/GeberativeAIRobotics";
+import RoboticsPage from "../../../entities/ProjectContent/GenerativeAIRobotics";
 import React from "react";
 
-
 const Robotics = () => {
-    return (
-        <>
-         <RoboticsPage/>
-        </>
-    );
+  return (
+    <>
+      <RoboticsPage />
+    </>
+  );
 };
 
 export default Robotics;

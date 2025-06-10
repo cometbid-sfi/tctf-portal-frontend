@@ -1,12 +1,12 @@
 import React from "react";
-import PressReleases from "@/app/entities/ResourcesContent/PressReleasesContent";
+import PressReleases from "../../../entities/ResourcesContent/PressReleasesContent";
 
 const PageComponent = () => {
-    return (
-        <>
-            <PressReleases />
-        </>
-    );
+  return (
+    <>
+      <PressReleases />
+    </>
+  );
 };
 
 export default PageComponent;

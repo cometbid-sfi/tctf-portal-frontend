@@ -1,12 +1,12 @@
 import React from "react";
-import FaqData from "@/app/entities/FaqData/FaqData";
+import FaqData from "../../entities/FaqData/FaqData";
 
 const Faq = () => {
-    return (
-        <>
-            <FaqData />
-        </>
-    );
+  return (
+    <>
+      <FaqData />
+    </>
+  );
 };
 
 export default Faq;

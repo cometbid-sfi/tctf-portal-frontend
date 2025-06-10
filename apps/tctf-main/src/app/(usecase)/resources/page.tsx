@@ -1,12 +1,12 @@
-import ResourcesContent from "@/app/entities/ResourcesContent/ResourcesContent";
+import ResourcesContent from "../../entities/ResourcesContent/ResourcesContent";
 import React from "react";
 
 const Resources = () => {
-    return (
-        <>
-            <ResourcesContent />
-        </>
-    );
+  return (
+    <>
+      <ResourcesContent />
+    </>
+  );
 };
 
 export default Resources;

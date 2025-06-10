@@ -1,14 +1,12 @@
-
-import AgroTechPage from "@/app/entities/ProjectContent/AgrotechContent";
+import AgroTechPage from "../../../entities/ProjectContent/AgrotechContent";
 import React from "react";
 
-
 const AgroTech = () => {
-    return (
-        <>
-           <AgroTechPage/>
-        </>
-    );
+  return (
+    <>
+      <AgroTechPage />
+    </>
+  );
 };
 
 export default AgroTech;

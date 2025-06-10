@@ -1,14 +1,12 @@
-
-import BlockchainPage from "@/app/entities/ProjectContent/BlockchainContent";
+import BlockchainPage from "../../../entities/ProjectContent/BlockchainContent";
 import React from "react";
 
-
 const Blockchain = () => {
-    return (
-        <>
-          <BlockchainPage/>
-        </>
-    );
+  return (
+    <>
+      <BlockchainPage />
+    </>
+  );
 };
 
 export default Blockchain;

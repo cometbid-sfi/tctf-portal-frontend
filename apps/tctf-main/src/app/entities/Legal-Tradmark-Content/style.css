@@ -1,10 +1,10 @@
-.tradmark-heding{
-    font-size: 30px;
-    font-weight: bold;
+.tradmark-heding {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .point-text {
-    font-size: 15px;
-    color: var(--lightTitle);
-    line-height: 24px;
+  font-size: 15px;
+  color: var(--lightTitle);
+  line-height: 24px;
 }

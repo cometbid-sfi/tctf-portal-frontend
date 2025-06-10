@@ -1,12 +1,12 @@
 import React from "react";
-import NewsContent from "@/app/entities/ResourcesContent/NewsContent";
+import NewsContent from "../../entities/ResourcesContent/NewsContent";
 
 const PageComponent = () => {
-    return (
-        <>
-            <NewsContent />
-        </>
-    );
+  return (
+    <>
+      <NewsContent />
+    </>
+  );
 };
 
 export default PageComponent;

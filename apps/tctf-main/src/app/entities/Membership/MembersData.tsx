@@ -538,7 +538,7 @@ const MembersData = () => {
                     onClick={() => handlePageChange(currentPage - 1)}
                     disabled={currentPage === 1}
                   />
-                  {[...Array(totalPages)].map((_, index) => (
+                  {Array.from({ length: totalPages }).map((_, index) => (
                     <Pagination.Item
                       key={index}
                       active={index + 1 === currentPage}

@@ -1,10 +1,8 @@
 import React from "react";
-import SecurityContent from "@/app/entities/SecurityContent/SecurityContent";
+import SecurityContent from "../../entities/SecurityContent/SecurityContent";
 
 const page = () => {
-    return (
-       <SecurityContent/>
-    );
+  return <SecurityContent />;
 };
 
 export default page;

@@ -1,103 +1,103 @@
 .donate-content p {
-    margin-bottom: 1rem;
-    color: var(--lightTitle);
-    font-size: 15px;
-    line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--lightTitle);
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .donate-content .center-logo {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .big-title {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .link-box {
-    border: 1px solid #ddd;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    color: var(--foreground);
-    background-color: #dfdfdf;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  color: var(--foreground);
+  background-color: #dfdfdf;
 }
 
 .sponsor-form {
-    background-color: #eee;
-    padding: 40px;
-    border-radius: 1rem
+  background-color: #eee;
+  padding: 40px;
+  border-radius: 1rem;
 }
 
 .sponsor-form label {
-    margin-bottom: 10px;
-    font-weight: 700;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .btn-neutral {
-    width: 100%;
-    border-radius: .5rem;
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 1rem;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    font-weight: 600;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-weight: 600;
 }
 
 .btn-neutral svg {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 .btn-neutral.selected {
-    background-color: var(--button);
-    color: #fff;
+  background-color: var(--button);
+  color: #fff;
 }
 
 .btn-grid {
-    display: flex;
-    gap: 30px;
-    margin: 5px 0;
+  display: flex;
+  gap: 30px;
+  margin: 5px 0;
 }
 
 .sponsor-form-custom-amount-input-wrapper {
-    align-items: center;
-    border-radius: .5rem;
-    display: flex;
-    margin: 5px 0;
+  align-items: center;
+  border-radius: 0.5rem;
+  display: flex;
+  margin: 5px 0;
 }
 
 .sponsor-form .sponsor-form-custom-amount-input-wrapper .sponsor-form-currency {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .sponsor-form-custom-amount-input-wrapper input {
-    border: none;
-    padding-left: 16px;
+  border: none;
+  padding-left: 16px;
 }
 
 .sponsor-form-custom-amount-input-wrapper input:focus {
-    outline: none;
+  outline: none;
 }
 
 .sponsor-form-custom-amount-input-wrapper .sponsor-form-currency-select {
-    border: none ! important;
-    font-weight: 700 ! important;
-    padding: 5px;
-    height: 40px;
+  border: none !important;
+  font-weight: 700 !important;
+  padding: 5px;
+  height: 40px;
 }
 
 .btn-foreground {
-    width: 100%;
-    border-radius: .5rem;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 1rem;
-    background-color: var(--foreground);
-    border: 1px solid var(--foreground);
-    font-weight: 600;
-    margin-top: 24px;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: var(--foreground);
+  border: 1px solid var(--foreground);
+  font-weight: 600;
+  margin-top: 24px;
 }

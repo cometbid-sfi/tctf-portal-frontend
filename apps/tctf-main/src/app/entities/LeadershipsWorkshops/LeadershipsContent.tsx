@@ -1,23 +1,49 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
-import Cardimg1 from "../../../assets/Images/custmer-service.png";
-import Cardimg2 from "../../../assets/Images/pepal-development.png";
-import Cardimg3 from "../../../assets/Images/result.png";
-import AltArrow from "../../../assets/Images/alt-arrow.svg";
 import "./style.css";
-import officeimg1 from "../../../assets/Images/officeimg.png";
-import officeimg2 from "../../../assets/Images/office-img2.png";
-import officeimg3 from "../../../assets/Images/office-img3.png";
-import Arrow from "../../../assets/Images/arrow.svg";
+
+import Cardimg1Svg from "../../../assets/Images/custmer-service.png";
+import Cardimg2Svg from "../../../assets/Images/pepal-development.png";
+import Cardimg3Svg from "../../../assets/Images/result.png";
+import AltArrowSvg from "../../../assets/Images/alt-arrow.svg";
+
+import officeimg1Svg from "../../../assets/Images/officeimg.png";
+import officeimg2Svg from "../../../assets/Images/office-img2.png";
+import officeimg3Svg from "../../../assets/Images/office-img3.png";
+
+import ArrowSvg from "../../../assets/Images/arrow.svg";
 import LiaLinkedinimg from "../../../assets/Images/LiaLinkedinimg.png";
 import Manimg from "../../../assets/Images/image-man.png";
-import Client1 from "../../../assets/Images/wg-ecd-tools.svg";
-import Client2 from "../../../assets/Images/wg-adoptium.svg";
-import Client3 from "../../../assets/Images/wg-jakarta.svg";
-import Client4 from "../../../assets/Images/wg_iot.svg";
-import ArrowRight from "../../../assets/Images/black-right.svg";
-import blanckimg from "../../../assets/Images/blanck-img.png"
+
+import Client1Svg from "../../../assets/Images/wg-ecd-tools.svg";
+import Client2Svg from "../../../assets/Images/wg-adoptium.svg";
+import Client3Svg from "../../../assets/Images/wg-jakarta.svg";
+import Client4Svg from "../../../assets/Images/wg_iot.svg";
+
+import ArrowRightSvg from "../../../assets/Images/black-right.svg";
+import BlanckimgSvg from "../../../assets/Images/blanck-img.png";
+
+// Type assertions for image imports
+const Cardimg1: StaticImageData = Cardimg1Svg as unknown as StaticImageData;
+const Cardimg2: StaticImageData = Cardimg2Svg as unknown as StaticImageData;
+const Cardimg3: StaticImageData = Cardimg3Svg as unknown as StaticImageData;
+
+const Client1: StaticImageData = Client1Svg as unknown as StaticImageData;
+const Client2: StaticImageData = Client2Svg as unknown as StaticImageData;
+const Client3: StaticImageData = Client3Svg as unknown as StaticImageData;
+const Client4: StaticImageData = Client4Svg as unknown as StaticImageData;
+
+const officeimg1: StaticImageData = officeimg1Svg as unknown as StaticImageData;
+const officeimg2: StaticImageData = officeimg2Svg as unknown as StaticImageData;
+const officeimg3: StaticImageData = officeimg3Svg as unknown as StaticImageData;
+
+const Arrow: StaticImageData = ArrowSvg as unknown as StaticImageData;
+
+const AltArrow: StaticImageData = AltArrowSvg as unknown as StaticImageData;
+const ArrowRight: StaticImageData = ArrowRightSvg as unknown as StaticImageData;
+const Blanckimg: StaticImageData = BlanckimgSvg as unknown as StaticImageData;
+
 const cardData = [
   {
     id: 1,
@@ -60,7 +86,7 @@ const cardDetaildata = [
     id: 3,
     hedimg: "Principal Consultant",
     title: "Stuart Willingham",
-    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years’ experience, having worked within and advising to businesses across the Retail.",
+    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years' experience, having worked within and advising to businesses across the Retail.",
     img: officeimg3,
     icon: LiaLinkedinimg,
   },
@@ -68,7 +94,7 @@ const cardDetaildata = [
     id: 4,
     hedimg: "Principal Consultant",
     title: "Stuart Willingham",
-    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years’ experience, having worked within and advising to businesses across the Retail.",
+    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years' experience, having worked within and advising to businesses across the Retail.",
     img: officeimg3,
     icon: LiaLinkedinimg,
   },
@@ -76,7 +102,7 @@ const cardDetaildata = [
     id: 5,
     hedimg: "Principal Consultant",
     title: "Stuart Willingham",
-    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years’ experience, having worked within and advising to businesses across the Retail.",
+    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years' experience, having worked within and advising to businesses across the Retail.",
     img: officeimg3,
     icon: LiaLinkedinimg,
   },
@@ -84,7 +110,7 @@ const cardDetaildata = [
     id: 6,
     hedimg: "Principal Consultant",
     title: "Stuart Willingham",
-    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years’ experience, having worked within and advising to businesses across the Retail.",
+    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years' experience, having worked within and advising to businesses across the Retail.",
     img: officeimg3,
     icon: LiaLinkedinimg,
   },
@@ -92,7 +118,7 @@ const cardDetaildata = [
     id: 7,
     hedimg: "Principal Consultant",
     title: "Stuart Willingham",
-    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years’ experience, having worked within and advising to businesses across the Retail.",
+    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years' experience, having worked within and advising to businesses across the Retail.",
     img: officeimg3,
     icon: LiaLinkedinimg,
   },
@@ -100,7 +126,7 @@ const cardDetaildata = [
     id: 8,
     hedimg: "Principal Consultant",
     title: "Stuart Willingham",
-    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years’ experience, having worked within and advising to businesses across the Retail.",
+    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years' experience, having worked within and advising to businesses across the Retail.",
     img: officeimg3,
     icon: LiaLinkedinimg,
   },
@@ -108,7 +134,7 @@ const cardDetaildata = [
     id: 9,
     hedimg: "Principal Consultant",
     title: "Stuart Willingham",
-    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years’ experience, having worked within and advising to businesses across the Retail.",
+    text: "Stuart Willingham is a business Leadership & Operational Excellence specialist with over 25 years' experience, having worked within and advising to businesses across the Retail.",
     img: officeimg3,
     icon: LiaLinkedinimg,
   },
@@ -143,27 +169,27 @@ const cardDetaildatacard = [
     hedimg: "CTF Leadership Group",
     title: "What are the Benefits of Measuring Behaviour Within Your Organisation?",
     text: "What Are the Benefits of Measuring Behaviour Within Your Organisation?",
-    img: blanckimg,
+    img: Blanckimg,
     // icon: LiaLinkedinimg,
   },
   {
     id: 2,
     hedimg: "CTF Leadership Group",
     title: "Coaching Benefits",
-    text: "The Coaching Framework Change is hard, yet it can be a critical step toward fulfilling a person’s full potential and achieving their goals, both at work and at home. This is where coaching comes intoRead more…",
-    img: blanckimg,
+    text: "The Coaching Framework Change is hard, yet it can be a critical step toward fulfilling a person's full potential and achieving their goals, both at work and at home. This is where coaching comes intoRead more…",
+    img: Blanckimg,
     // icon: LiaLinkedinimg,
   },
   {
     id: 3,
     hedimg: "CTF Leadership Group",
     title: "What is Ripple?",
-    text: "What is Ripple? The best way to promote a great culture in your business is to ‘develop and engage’ team members through your leaders",
-    img: blanckimg,
+    text: "What is Ripple? The best way to promote a great culture in your business is to 'develop and engage' team members through your leaders",
+    img: Blanckimg,
     // icon: LiaLinkedinimg,
   },
-
 ];
+
 const CTFLeadershipPage = () => {
   return (
     <>
@@ -174,11 +200,10 @@ const CTFLeadershipPage = () => {
               CTF Leadership Training and <span> Workshops</span>
             </h1>
             <p className="hero-description">
-              CometBid Leadership Group is a business People & Culture solutions
-              practice. Our objective is to acquire an <br /> extensive
-              understanding of your business, before partnering with you to
-              customize an effective solution <br /> that will achieve results
-              for your organisation through your people.
+              CometBid Leadership Group is a business People & Culture solutions practice. Our
+              objective is to acquire an <br /> extensive understanding of your business, before
+              partnering with you to customize an effective solution <br /> that will achieve
+              results for your organisation through your people.
             </p>
           </div>
         </div>
@@ -213,11 +238,8 @@ const CTFLeadershipPage = () => {
 
       <div className="container mt-5">
         <div className="row">
-          {cardData.map((card) => (
-            <div
-              className="col-md-6 col-lg-4 mb-3 ali text-center"
-              key={card.id}
-            >
+          {cardData.map(card => (
+            <div className="col-md-6 col-lg-4 mb-3 ali text-center" key={card.id}>
               <div className="border-box-common card-box">
                 <div className="box-icon-csf">
                   <Image src={card.img} alt="Icon" className="imglogo" />
@@ -235,14 +257,14 @@ const CTFLeadershipPage = () => {
       <div className="container">
         <div className="page-title mt-5 text-center">
           <h2>
-            Meet the Friendly faces behind CTF&apos;s <br /> Leadership Trainings,
-            Groups and Workshops
+            Meet the Friendly faces behind CTF&apos;s <br /> Leadership Trainings, Groups and
+            Workshops
           </h2>
         </div>
       </div>
       <div className="container mt-5">
         <div className="row">
-          {cardDetaildata.map((card) => (
+          {cardDetaildata.map(card => (
             <div
               className="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center"
               key={card.id}
@@ -253,18 +275,12 @@ const CTFLeadershipPage = () => {
               >
                 {/* Top Image */}
                 <div className="custom-card-img-box mb-4">
-                  <Image
-                    src={card.img}
-                    alt="Card Image"
-                    className="custom-card-img"
-                  />
+                  <Image src={card.img} alt="Card Image" className="custom-card-img" />
                 </div>
 
                 {/* Text Content */}
                 <div className="custom-card-content">
-                  <span className="custom-card-subheading text-primary">
-                    {card.hedimg}
-                  </span>
+                  <span className="custom-card-subheading text-primary">{card.hedimg}</span>
                   <h3 className="custom-card-heading mt-2">{card.title}</h3>
                   <p className="custom-card-text mt-2">{card.text}</p>
                 </div>
@@ -281,9 +297,7 @@ const CTFLeadershipPage = () => {
       <div className="container">
         <section className="banner-section banner-leadership-workshops-section mt-4">
           <div className="hero-content text-center">
-            <h1 className=" box-text-heding">
-              People Development Programs and Platforms
-            </h1>
+            <h1 className=" box-text-heding">People Development Programs and Platforms</h1>
             <div className="border-button mt-32">
               <Link href="/">
                 <button className="btn btn-primary">
@@ -335,10 +349,10 @@ const CTFLeadershipPage = () => {
       <section className="latest-news-section mt-80">
         <div className="container">
           {/* <div className="page-header">
-                                                <div className="page-title">
-                                                    <h2>Featured Collaborations</h2>
-                                                </div>
-                                            </div> */}
+                <div className="page-title">
+                  <h2>Featured Collaborations</h2>
+                </div>
+            </div> */}
           <div className="row">
             <div className="col-md-6 col-lg-3">
               <div className="client-logo">
@@ -377,8 +391,11 @@ const CTFLeadershipPage = () => {
       </div>
       <div className="container mt-5">
         <div className="row">
-          {cardDetaildatacard.map((card) => (
-            <div className="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center" key={card.id}>
+          {cardDetaildatacard.map(card => (
+            <div
+              className="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center"
+              key={card.id}
+            >
               <div className="custom-card bg-white shadow-lg rounded-3 p-4 w-100 position-relative overflow-hidden card-box-office">
                 {/* Top Image */}
                 <div className="custom-card-img-box mb-4">

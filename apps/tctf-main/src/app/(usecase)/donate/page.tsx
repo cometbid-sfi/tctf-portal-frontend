@@ -1,12 +1,12 @@
 import React from "react";
-import DonateContent from "@/app/entities/DonateContent/DonateContent";
+import DonateContent from "../../entities/DonateContent/DonateContent";
 
 const Donate = () => {
-    return (
-        <>
-            <DonateContent />
-        </>
-    );
+  return (
+    <>
+      <DonateContent />
+    </>
+  );
 };
 
 export default Donate;

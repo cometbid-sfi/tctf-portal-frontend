@@ -1,14 +1,12 @@
-
-import FinancialPage from "@/app/entities/ProjectContent/FinancialContent";
+import FinancialPage from "../../../entities/ProjectContent/FinancialContent";
 import React from "react";
 
-
 const Financial = () => {
-    return (
-        <>
-           <FinancialPage/>
-        </>
-    );
+  return (
+    <>
+      <FinancialPage />
+    </>
+  );
 };
 
 export default Financial;

@@ -1,52 +1,50 @@
-.table-heding{  
-  background-color: #1A14A7 !important;
-  color: #FFFFFF !important;
+.table-heding {
+  background-color: #1a14a7 !important;
+  color: #ffffff !important;
   font-size: 15px !important;
- 
 }
 
-.info-text{
-    font-size: 15px ;
-    color: #076BB6 ;
+.info-text {
+  font-size: 15px;
+  color: #076bb6;
 }
 
-.info-text-dicription{
-    font-size: 12px;
-    color: #5c6981;
+.info-text-dicription {
+  font-size: 12px;
+  color: #5c6981;
 }
 
-.number{
-    color: #000000;
-    font-size: 12px;
+.number {
+  color: #000000;
+  font-size: 12px;
 }
 
-.day-name{
-    font-size: 9px;
-     color: #000000;
+.day-name {
+  font-size: 9px;
+  color: #000000;
 }
 
-.text-cp-name{
-    font-size: 12px;
-    color: #000000;
+.text-cp-name {
+  font-size: 12px;
+  color: #000000;
 }
 
-
-.last-message{
-    width: fit-content !important;
-    white-space: nowrap !important;
+.last-message {
+  width: fit-content !important;
+  white-space: nowrap !important;
 }
 
-.table-heding-last-massage{
-     width: fit-content !important;
-    white-space: nowrap !important;
-    background-color: #1A14A7 !important;
-  color: #FFFFFF !important;
+.table-heding-last-massage {
+  width: fit-content !important;
+  white-space: nowrap !important;
+  background-color: #1a14a7 !important;
+  color: #ffffff !important;
   font-size: 15px !important;
 }
 
 table {
-    width: 100%;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
 }

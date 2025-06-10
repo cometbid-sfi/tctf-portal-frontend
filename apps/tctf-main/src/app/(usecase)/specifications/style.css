@@ -1,144 +1,135 @@
 .our-services .our-services-section {
-    background: var(--lightBackground);
-    margin: 80px 50px;
-    border-radius: 50px;
-    padding: 60px 80px;
+  background: var(--lightBackground);
+  margin: 80px 50px;
+  border-radius: 50px;
+  padding: 60px 80px;
 }
 
 .our-services .our-services-item {
-    background-color: var(--background);
-    padding: 22px 16px;
-    text-align: left;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    height: 100%;
+  background-color: var(--background);
+  padding: 22px 16px;
+  text-align: left;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  height: 100%;
 }
 
 .our-services .our-services-icon img {
-    margin-bottom: 40px;
-    width: 60px;
-    height: 60px;
+  margin-bottom: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .our-services .our-services-item h3 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    text-transform: capitalize;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-transform: capitalize;
 }
 
 .our-services .our-services-item p {
-    color: var(--lightTitle);
-    line-height: 30px;
+  color: var(--lightTitle);
+  line-height: 30px;
 }
 
 .our-services .our-services-item p {
-    font-size: 15px;
-    line-height: 28px;
+  font-size: 15px;
+  line-height: 28px;
 }
 
 .callabratingBox .border-box {
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .callabratingBox .box-inner {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .callabratingBox .box-icon {
-    background-color: white;
-    color: var(--background);
-    border-radius: 10px;
-    min-width: 160px;
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  background-color: white;
+  color: var(--background);
+  border-radius: 10px;
+  min-width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .callabratingBox .box-inner {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .callabratingBox .count {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: transparent;
-    font-size: 30px;
-    -webkit-text-stroke: 0.5px white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: transparent;
+  font-size: 30px;
+  -webkit-text-stroke: 0.5px white;
 }
 
 .callabratingBox .box-content h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--button);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--button);
 }
 
 .callabratingBox .box-content p {
-    font-size: 15px;
-    line-height: 1.6;
-    color: var(--lightTitle);
-    margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--lightTitle);
+  margin-bottom: 0;
 }
 
 .callabratingBox .boxiconimg {
-    width: 140px;
-    height: auto;
+  width: 140px;
+  height: auto;
 }
 
-
-
 @media (max-width: 767px) {
+  .our-services .our-services-section {
+    margin: 40px 0px;
+    padding: 40px 0px;
+    border-radius: 0;
+  }
 
-    .our-services .our-services-section {
-        margin: 40px 0px;
-        padding: 40px 0px;
-        border-radius: 0;
-    }
+  .our-services .our-services-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
 
-    .our-services .our-services-icon img {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 20px;
-    }
+  .our-services .our-services-item p {
+    font-size: 15px;
+    line-height: 28px;
+  }
 
-    .our-services .our-services-item p {
-        font-size: 15px;
-        line-height: 28px;
-    }
+  .callabratingBox .box-inner {
+    flex-wrap: wrap;
+  }
 
+  .callabratingBox .box-icon {
+    margin-left: 0;
+    min-width: 120px;
+    height: 120px;
+    margin-bottom: 0;
+  }
 
+  .callabratingBox .box-icon img {
+    width: 100px;
+    height: auto;
+  }
 
-    .callabratingBox .box-inner {
-        flex-wrap: wrap;
-    }
-
-    .callabratingBox .box-icon {
-        margin-left: 0;
-        min-width: 120px;
-        height: 120px;
-        margin-bottom: 0;
-    }
-
-    .callabratingBox .box-icon img {
-        width: 100px;
-        height: auto;
-    }
-
-    .callabratingBox .count {
-        font-size: 22px;
-    }
-
-
-
-
+  .callabratingBox .count {
+    font-size: 22px;
+  }
 }

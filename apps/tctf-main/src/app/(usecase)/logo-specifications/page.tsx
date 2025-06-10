@@ -1,16 +1,13 @@
-
 import React from "react";
 
-
-import LogoSpecificationsContantPage from "@/app/entities/logo-specifications/page";
-
+import LogoSpecificationsContantPage from "../../entities/logo-specifications/page";
 
 const LogoSpecifications = () => {
-    return (
-        <>
-            <LogoSpecificationsContantPage />
-        </>
-    );
+  return (
+    <>
+      <LogoSpecificationsContantPage />
+    </>
+  );
 };
 
 export default LogoSpecifications;

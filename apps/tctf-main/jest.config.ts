@@ -7,4 +7,6 @@ export default {
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
   coverageDirectory: "../../coverage/apps/tctf-main",
+  transformIgnorePatterns: ["/node_modules/(?!swiper|ssr-window|dom7).*\\.m?js$"],
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
 };

@@ -1,5 +1,5 @@
-import Support from '@/app/entities/SupportPageContent/page';
-import React from 'react'
+import Support from "../../entities/SupportPageContent/page";
+import React from "react";
 
 const SupportPage = () => {
   return (
@@ -9,4 +9,4 @@ const SupportPage = () => {
   );
 };
 
-export default SupportPage
+export default SupportPage;

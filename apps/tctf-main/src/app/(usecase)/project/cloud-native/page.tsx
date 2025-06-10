@@ -1,15 +1,11 @@
-import CloudNativePage from "@/app/entities/ProjectContent/CloudNativeContent";
+import CloudNativePage from "../../../entities/ProjectContent/CloudNativeContent";
 import React from "react";
-
-
-
-
 
 const CloudNative = () => {
   return (
-   <>
-   <CloudNativePage/>
-   </>
+    <>
+      <CloudNativePage />
+    </>
   );
 };
 

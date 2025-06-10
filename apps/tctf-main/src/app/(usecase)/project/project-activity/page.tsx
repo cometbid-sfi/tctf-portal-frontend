@@ -1,12 +1,12 @@
 import React from "react";
-import ProjectActivityContent from "@/app/entities/ProjectContent/ProjectActivityContent";
+import ProjectActivityContent from "../../../entities/ProjectContent/ProjectActivityContent";
 
 const ProjectActivity = () => {
-    return (
-        <>
-            <ProjectActivityContent />
-        </>
-    );
+  return (
+    <>
+      <ProjectActivityContent />
+    </>
+  );
 };
 
 export default ProjectActivity;

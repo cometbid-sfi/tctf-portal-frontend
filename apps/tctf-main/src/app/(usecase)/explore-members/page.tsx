@@ -1,13 +1,12 @@
 import React from "react";
-import MembersData from "@/app/entities/Membership/MembersData";
+import MembersData from "../../entities/Membership/MembersData";
 
 const ExploreMembers = () => {
-    return (
-        <>
-            <MembersData />
-        </>
-    );
+  return (
+    <>
+      <MembersData />
+    </>
+  );
 };
-
 
 export default ExploreMembers;

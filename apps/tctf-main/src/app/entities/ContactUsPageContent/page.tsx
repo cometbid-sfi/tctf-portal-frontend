@@ -1,13 +1,20 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import AltArrow from "../../../assets/Images/alt-arrow.svg";
-import Sidebar from "@/component/Sidebar/Sidebar";
 import "./style.css";
-import Mailicon from "../../../assets/Images/Vector.svg";
-import Emaill from "../../../assets/Images/e-maill-contactus.svg";
-import Phoneicon from "../../../assets/Images/Telephone-icon.png";
-import Locationicon from "../../../assets/Images/location-img-contactus.png";
+import AltArrowSvg from "../../../assets/Images/alt-arrow.svg";
+import Sidebar from "../../../component/Sidebar/Sidebar";
+import MailiconSvg from "../../../assets/Images/Vector.svg";
+import EmailSvg from "../../../assets/Images/e-maill-contactus.svg";
+import PhoneiconSvg from "../../../assets/Images/Telephone-icon.png";
+import LocationiconSvg from "../../../assets/Images/location-img-contactus.png";
+
+// Type assertions for image imports
+const AltArrow: StaticImageData = AltArrowSvg as unknown as StaticImageData;
+const Mailicon: StaticImageData = MailiconSvg as unknown as StaticImageData;
+const Email: StaticImageData = EmailSvg as unknown as StaticImageData;
+const Phoneicon: StaticImageData = PhoneiconSvg as unknown as StaticImageData;
+const Locationicon: StaticImageData = LocationiconSvg as unknown as StaticImageData;
 
 const cards = [
   {
@@ -16,14 +23,14 @@ const cards = [
     linkUrl: "",
     showIcon: false,
   },
-  
+
   {
     title: "Status of our infrastructure",
     linkText: "",
     linkUrl: "",
     showIcon: false,
   },
-{
+  {
     title: "Technical questions / Support (via HTTP)",
     linkText: "CT Foundation Service Status",
     linkUrl: "/login",
@@ -58,11 +65,9 @@ const ContactUsContantpage = () => {
               CTF - <span> Contact Us</span>
             </h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
               <br />
-              Ipsum has been the industry&apos;s standard dummy text ever since
-              the 1500s,
+              Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
             </p>
           </div>
         </div>
@@ -99,36 +104,34 @@ const ContactUsContantpage = () => {
                 </div>
                 <div className="row g-4 mt-4">
                   {cards.map((card, index) => (
-  <div className="col-md-6" key={index}>
-    <div className="card-contact h-100 shadow">
-      <div className="card-body-contact-us">
-        <div className="d-flex justify-content-between align-items-start">
-          <h5 className="card-box-title">{card.title}</h5>
-          {card.showIcon && (
-            <span className="card-icon">
-              <Image src={Mailicon} alt="e-mail icon" width={20} height={20} />
-            </span>
-          )}
-        </div>
+                    <div className="col-md-6" key={index}>
+                      <div className="card-contact h-100 shadow">
+                        <div className="card-body-contact-us">
+                          <div className="d-flex justify-content-between align-items-start">
+                            <h5 className="card-box-title">{card.title}</h5>
+                            {card.showIcon && (
+                              <span className="card-icon">
+                                <Image src={Mailicon} alt="e-mail icon" width={20} height={20} />
+                              </span>
+                            )}
+                          </div>
 
-        {/* Show this ONLY for index 1 or 2 */}
-        {(index === 0 || index === 1) ? (
-          <p className="Contactus-card-box-link">
-            <Link href="/individual-account">Register</Link> and{" "}
-            <Link href="https://www.bugzilla.org/">report a bug/issue</Link>
-          </p>
-        ) : (
-          /* Show this for all other indexes */
-          <p className="Contactus-card-box-link">
-            <Link href={card.linkUrl}>{card.linkText}</Link>
-          </p>
-        )}
-
-      </div>
-    </div>
-  </div>
-))}
-
+                          {/* Show this ONLY for index 1 or 2 */}
+                          {index === 0 || index === 1 ? (
+                            <p className="Contactus-card-box-link">
+                              <Link href="/individual-account">Register</Link> and{" "}
+                              <Link href="https://www.bugzilla.org/">report a bug/issue</Link>
+                            </p>
+                          ) : (
+                            /* Show this for all other indexes */
+                            <p className="Contactus-card-box-link">
+                              <Link href={card.linkUrl}>{card.linkText}</Link>
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -154,42 +157,23 @@ const ContactUsContantpage = () => {
               {/* Contact Info */}
               <div className="contact-info">
                 <h1>
-                  Let&apos;s discuss <br /> something{" "}
-                  <span className="highlight-color">cool</span> together
+                  Let&apos;s discuss <br /> something <span className="highlight-color">cool</span>{" "}
+                  together
                 </h1>
                 <div className="contactus-info-group mt-5">
                   <p className="contactus-info-item">
-                    <Image
-                      src={Emaill}
-                      alt="Email Icon"
-                      width={20}
-                      height={20}
-                    />
-                    <span className="contactus-info-text">
-                      SaulDesign@gmail.com
-                    </span>
+                    <Image src={Email} alt="Email Icon" width={20} height={20} />
+                    <span className="contactus-info-text">SaulDesign@gmail.com</span>
                   </p>
 
                   <p className="contactus-info-button">
-                    <Image
-                      src={Phoneicon}
-                      alt="Phone Icon"
-                      width={20}
-                      height={20}
-                    />
+                    <Image src={Phoneicon} alt="Phone Icon" width={20} height={20} />
                     <span className="contactus-info-text">+123 456 789</span>
                   </p>
 
                   <p className="contactus-info-item">
-                    <Image
-                      src={Locationicon}
-                      alt="Location Icon"
-                      width={20}
-                      height={20}
-                    />
-                    <span className="contactus-info-text">
-                      123 Street 456 House
-                    </span>
+                    <Image src={Locationicon} alt="Location Icon" width={20} height={20} />
+                    <span className="contactus-info-text">123 Street 456 House</span>
                   </p>
                 </div>
               </div>

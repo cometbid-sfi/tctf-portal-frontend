@@ -30,7 +30,7 @@ const FoundationcouncilPage = () => {
   const currentNews = councilMembers.slice(indexOfFirstNews, indexOfLastNews);
   const totalPages = Math.ceil(councilMembers.length / newsPerPage);
 
-  const handlePageChange = (pageNumber: any) => {
+  const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
   };
 

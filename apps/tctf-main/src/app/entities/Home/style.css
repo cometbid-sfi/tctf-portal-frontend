@@ -1,759 +1,755 @@
 .hero-section {
-    background-color: var(--primary);
-    /* padding: 100px 0; */
-    color: var(--background);
-    height: 800px;
-    margin-top: 90px;
+  background-color: var(--primary);
+  /* padding: 100px 0; */
+  color: var(--background);
+  height: 800px;
+  margin-top: 90px;
 }
 
 .hero-content .hero-subtitle {
-    font-size: 22px;
-    font-weight: bold;
-    border: 1px solid var(--background);
-    width: fit-content;
-    padding: 10px 30px;
-    border-radius: 40px;
-    line-height: normal;
+  font-size: 22px;
+  font-weight: bold;
+  border: 1px solid var(--background);
+  width: fit-content;
+  padding: 10px 30px;
+  border-radius: 40px;
+  line-height: normal;
 }
 
 .hero-content .hero-title {
-    font-size: 60px;
-    font-weight: bold;
-    margin: 18px 0;
-    line-height: 70px;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 18px 0;
+  line-height: 70px;
 }
 
 .hero-content .hero-title span {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 .hero-content .hero-description {
-    font-size: 18px;
-    margin: 18px 0 30px 0;
-    font-weight: 500;
+  font-size: 18px;
+  margin: 18px 0 30px 0;
+  font-weight: 500;
 }
 
 .border-button button {
-    background-color: transparent;
-    color: var(--background);
-    border: none;
-    padding: 15px 30px;
-    border-radius: 40px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border: 1px solid var(--background);
+  background-color: transparent;
+  color: var(--background);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid var(--background);
 }
 
 .border-button button:hover {
-    background-color: transparent;
-    border: 1px solid var(--background);
+  background-color: transparent;
+  border: 1px solid var(--background);
 }
 
 .border-button button img {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: -105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: -105px;
 }
 
 .hero-image img {
-    max-width: 100%;
-    height: 100%;
+  max-width: 100%;
+  height: 100%;
 }
-
-
 
 /**************************************
     csf community css start here
 **************************************/
 
 .csf-community-section {
-    background-color: var(--lightBackground);
-    padding: 70px 0;
-    color: var(--foreground);
-    margin-left: 130px;
-    margin-top: -60px;
-    z-index: 99;
-    position: relative;
-    border-radius: 0 0 0px 80px;
+  background-color: var(--lightBackground);
+  padding: 70px 0;
+  color: var(--foreground);
+  margin-left: 130px;
+  margin-top: -60px;
+  z-index: 99;
+  position: relative;
+  border-radius: 0 0 0px 80px;
 }
 
 .border-line {
-    border: 1px solid #CCCCCC;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .about-community {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .community-card {
-    background-color: var(--background);
-    color: var(--foreground);
-    padding: 20px;
-    border-radius: 40px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 20px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
 }
 
 .community-title {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
 .community-button {
-    width: 60px;
-    height: 60px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-    border: 1px solid var(--foreground);
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  border: 1px solid var(--foreground);
 }
 
 .color-1 {
-    background-color: var(--secondary);
+  background-color: var(--secondary);
 }
 
 .color-2,
 .color-3 {
-    background-color: var(--primary);
-    color: var(--background);
+  background-color: var(--primary);
+  color: var(--background);
 }
 
 .color-2 .community-button,
 .color-3 .community-button {
-    border: 1px solid var(--background);
+  border: 1px solid var(--background);
 }
 
 .color-3 {
-    background-color: var(--foreground);
-    color: var(--background);
+  background-color: var(--foreground);
+  color: var(--background);
 }
 
 .card-border {
-    border: 1px solid #CCCCCC;
-    border-radius: 20px;
-    padding: 40px 18px;
-    margin-bottom: 22px;
-    height: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  padding: 40px 18px;
+  margin-bottom: 22px;
+  height: 100%;
 }
 
 .announcement-title {
-    font-size: 26px;
-    font-weight: bold;
-    line-height: normal;
-    margin: 14px 0;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: normal;
+  margin: 14px 0;
 }
 
 .announcement-date {
-    color: var(--lightTitle);
+  color: var(--lightTitle);
 }
 
 .announcement-description {
-    line-height: 30px;
-    color: var(--lightTitle);
+  line-height: 30px;
+  color: var(--lightTitle);
 }
 
 .blog-content {
-    padding: 24px 32px;
+  padding: 24px 32px;
 }
 
 .blog-card {
-    border: 1px solid #CCCCCC;
-    border-radius: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
 }
 
 .blog-image img {
-    border-radius: 20px 20px 0 0;
-    width: 100%;
-    height: 100%;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 100%;
 }
 
 .blog-info img {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
 }
 
 .min-text {
-    color: var(--lightTitle);
+  color: var(--lightTitle);
 }
 
 .blog-title {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 10px 0 20px;
-    line-height: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 20px;
+  line-height: 30px;
 }
 
 .blog-button {
-    color: var(--foreground);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+  color: var(--foreground);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .blog-button img {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .choose-description {
-    color: var(--lightTitle);
+  color: var(--lightTitle);
 }
 
 .choose-description ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .choose-description ul li {
-    display: flex;
-    gap: 18px;
+  display: flex;
+  gap: 18px;
 }
 
 .choose-description ul li .dot {
-    width: 30px;
+  width: 30px;
 }
 
 .why-choose-us-image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 .faq-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 22px;
-    text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 22px;
+  text-align: center;
 }
 
 .faq-section button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    height: 90px;
-    border: none;
-    box-shadow: none;
-    border-radius: 20px;
-    /* border: 1px solid #CCCCCC; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  height: 90px;
+  border: none;
+  box-shadow: none;
+  border-radius: 20px;
+  /* border: 1px solid #CCCCCC; */
 }
 
 .faq-item {
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    border: none;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: none;
 }
 
 .faq-content {
-    border-radius: 20px;
-    transition: transform 0.3s ease;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
 }
 
 .faq-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .announcement-image img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .bg-image {
-    background-image: url('../../../assets/Images/bg-blue.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-    padding: 60px 30px;
-    color: var(--background);
+  background-image: url("../../../assets/Images/bg-blue.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  padding: 60px 30px;
+  color: var(--background);
 }
 
 .border-card {
-    border: 1px solid #CCCCCC;
-    border-radius: 20px;
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .content h3 {
-    font-size: 40px;
-    font-weight: bold;
-    line-height: normal;
-    margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: normal;
+  margin: 0;
 }
 
 .content p {
-    margin: 0;
+  margin: 0;
 }
 
 .brand-logo {
-    text-align: center;
+  text-align: center;
 }
 
 .brand-logo img {
-    width: 180px;
-    height: 100px;
+  width: 180px;
+  height: 100px;
 }
 
 .btn-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .why-choose-us-image img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .announcement-image {
-    height: 100%;
+  height: 100%;
 }
 
 /* Responsive css start  */
 
 /* Extra small devices (phones) */
 @media (max-width: 575px) {
+  .hero-section {
+    height: auto;
+    margin-top: 70px;
+    padding-top: 60px;
+  }
 
-    .hero-section {
-        height: auto;
-        margin-top: 70px;
-        padding-top: 60px;
-    }
+  .hero-content .hero-subtitle {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
 
-    .hero-content .hero-subtitle {
-        font-size: 16px;
-        padding: 8px 20px;
-    }
+  .hero-content .hero-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 18px 0;
+    line-height: normal;
+  }
 
-    .hero-content .hero-title {
-        font-size: 42px;
-        font-weight: bold;
-        margin: 18px 0;
-        line-height: normal;
-    }
+  .hero-content .hero-description {
+    font-size: 16px;
+  }
 
-    .hero-content .hero-description {
-        font-size: 16px;
-    }
+  .hero-image {
+    bottom: 0;
+  }
 
-    .hero-image {
-        bottom: 0;
-    }
+  .csf-community-section {
+    margin-left: 20px;
+    padding: 40px 0;
+    border-radius: 0 0 0px 60px;
+  }
 
-    .csf-community-section {
-        margin-left: 20px;
-        padding: 40px 0;
-        border-radius: 0 0 0px 60px;
-    }
+  .border-line {
+    margin-bottom: 0;
+  }
 
-    .border-line {
-        margin-bottom: 0;
-    }
+  .about-community {
+    font-size: 15px;
+  }
 
-    .about-community {
-        font-size: 15px;
-    }
+  .community-card {
+    margin-bottom: 16px;
+    height: auto;
+    border-radius: 20px;
+  }
 
-    .community-card {
-        margin-bottom: 16px;
-        height: auto;
-        border-radius: 20px;
-    }
+  .community-image img {
+    width: 80px;
+    height: 80px;
+  }
 
-    .community-image img {
-        width: 80px;
-        height: 80px;
-    }
+  .community-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+  }
 
-    .community-button {
-        width: 50px;
-        height: 50px;
-        border-radius: 14px;
-    }
+  .announcement-image {
+    margin-bottom: 22px;
+  }
 
-    .announcement-image {
-        margin-bottom: 22px;
-    }
+  .announcement-date {
+    font-size: 14px;
+  }
 
-    .announcement-date {
-        font-size: 14px;
-    }
+  .announcement-title {
+    font-size: 20px;
+  }
 
-    .announcement-title {
-        font-size: 20px;
-    }
+  .announcement-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
-    .announcement-description {
-        font-size: 14px;
-        line-height: 24px;
-    }
+  .card-border {
+    padding: 32px 18px;
+  }
 
-    .card-border {
-        padding: 32px 18px;
-    }
+  .page-button .slide-btn {
+    width: 40px;
+    height: 40px;
+  }
 
-    .page-button .slide-btn {
-        width: 40px;
-        height: 40px;
-    }
+  .swiper {
+    padding: 0px 12px !important;
+  }
 
-    .swiper {
-        padding: 0px 12px !important;
-    }
+  .blog-content {
+    padding: 18px 24px;
+  }
 
-    .blog-content {
-        padding: 18px 24px;
-    }
+  .min-text {
+    font-size: 14px;
+  }
 
-    .min-text {
-        font-size: 14px;
-    }
+  .blog-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
 
-    .blog-title {
-        font-size: 20px;
-        line-height: 26px;
-    }
+  .why-choose-us-content .page-title,
+  .faqs-section .page-title {
+    margin-bottom: 30px;
+  }
 
-    .why-choose-us-content .page-title,
-    .faqs-section .page-title {
-        margin-bottom: 30px;
-    }
+  .choose-description ul li .dot img {
+    width: 20px;
+    height: 20px;
+  }
 
-    .choose-description ul li .dot img {
-        width: 20px;
-        height: 20px;
-    }
+  .choose-description ul li .text {
+    font-size: 15px;
+  }
 
-    .choose-description ul li .text {
-        font-size: 15px;
-    }
+  .why-choose-us-image img {
+    width: 100%;
+    height: 100%;
+    margin-top: 22px;
+  }
 
-    .why-choose-us-image img {
-        width: 100%;
-        height: 100%;
-        margin-top: 22px;
-    }
+  .faq-section button {
+    text-align: left;
+    font-size: 16px;
+  }
 
-    .faq-section button {
-        text-align: left;
-        font-size: 16px;
-    }
-
-    .join-community-content {
-        margin-bottom: 22px;
-    }
+  .join-community-content {
+    margin-bottom: 22px;
+  }
 }
-
 
 /* Small devices (landscape phones) */
 @media (min-width: 576px) and (max-width: 767px) {
-    .hero-section {
-        height: auto;
-        margin-top: 70px;
-        padding-top: 60px;
-    }
+  .hero-section {
+    height: auto;
+    margin-top: 70px;
+    padding-top: 60px;
+  }
 
-    .hero-content .hero-subtitle {
-        font-size: 16px;
-        padding: 8px 20px;
-    }
+  .hero-content .hero-subtitle {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
 
-    .hero-content .hero-title {
-        font-size: 46px;
-        font-weight: bold;
-        margin: 18px 0;
-        line-height: normal;
-    }
+  .hero-content .hero-title {
+    font-size: 46px;
+    font-weight: bold;
+    margin: 18px 0;
+    line-height: normal;
+  }
 
-    .hero-content .hero-description {
-        font-size: 16px;
-    }
+  .hero-content .hero-description {
+    font-size: 16px;
+  }
 
-    .hero-image {
-        bottom: 0;
-    }
+  .hero-image {
+    bottom: 0;
+  }
 
-    .csf-community-section {
-        margin-left: 20px;
-        padding: 40px 0;
-        border-radius: 0 0 0px 60px;
-    }
+  .csf-community-section {
+    margin-left: 20px;
+    padding: 40px 0;
+    border-radius: 0 0 0px 60px;
+  }
 
-    .border-line {
-        margin-bottom: 0;
-    }
+  .border-line {
+    margin-bottom: 0;
+  }
 
-    .about-community {
-        font-size: 15px;
-    }
+  .about-community {
+    font-size: 15px;
+  }
 
-    .community-card {
-        margin-bottom: 16px;
-        height: auto;
-        border-radius: 20px;
-    }
+  .community-card {
+    margin-bottom: 16px;
+    height: auto;
+    border-radius: 20px;
+  }
 
-    .community-image img {
-        width: 80px;
-        height: 80px;
-    }
+  .community-image img {
+    width: 80px;
+    height: 80px;
+  }
 
-    .community-button {
-        width: 50px;
-        height: 50px;
-        border-radius: 14px;
-    }
+  .community-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+  }
 
-    .announcement-image {
-        margin-bottom: 22px;
-    }
+  .announcement-image {
+    margin-bottom: 22px;
+  }
 
-    .announcement-date {    
-        font-size: 15px;    
-    }
+  .announcement-date {
+    font-size: 15px;
+  }
 
-    .announcement-title {
-        font-size: 22px;
-    }
+  .announcement-title {
+    font-size: 22px;
+  }
 
-    .announcement-description {
-        font-size: 15px;
-        line-height: 24px;
-    }
+  .announcement-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
 
-    .page-button .slide-btn {
-        width: 45px;
-        height: 45px;
-    }
+  .page-button .slide-btn {
+    width: 45px;
+    height: 45px;
+  }
 
-    .blog-title {
-        font-size: 20px;
-        line-height: 26px;
-    }
+  .blog-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
 
-    .why-choose-us-content .page-title,
-    .faqs-section .page-title {
-        margin-bottom: 30px;
-    }
+  .why-choose-us-content .page-title,
+  .faqs-section .page-title {
+    margin-bottom: 30px;
+  }
 
-    .choose-description ul li .dot img {
-        width: 20px;
-        height: 20px;
-    }
+  .choose-description ul li .dot img {
+    width: 20px;
+    height: 20px;
+  }
 
-    .choose-description ul li .text {
-        font-size: 15px;
-    }
+  .choose-description ul li .text {
+    font-size: 15px;
+  }
 
-    .why-choose-us-image img {
-        width: 100%;
-        height: 100%;
-        margin-top: 22px;
-    }
+  .why-choose-us-image img {
+    width: 100%;
+    height: 100%;
+    margin-top: 22px;
+  }
 
-    .faq-section button {
-        text-align: left;
-        font-size: 16px;
-    }
+  .faq-section button {
+    text-align: left;
+    font-size: 16px;
+  }
 
-    .join-community-content {
-        margin-bottom: 22px;
-    }
+  .join-community-content {
+    margin-bottom: 22px;
+  }
 }
 
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
-    .hero-section {
-        height: auto;
-        margin-top: 70px;
-        padding-top: 60px;
-    }
+  .hero-section {
+    height: auto;
+    margin-top: 70px;
+    padding-top: 60px;
+  }
 
-    .hero-content .hero-subtitle {
-        font-size: 16px;
-        padding: 8px 20px;
-    }
+  .hero-content .hero-subtitle {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
 
-    .hero-content .hero-title {
-        font-size: 50px;
-        font-weight: bold;
-        margin: 18px 0;
-        line-height: normal;
-    }
+  .hero-content .hero-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 18px 0;
+    line-height: normal;
+  }
 
-    .hero-content .hero-description {
-        font-size: 16px;
-    }
+  .hero-content .hero-description {
+    font-size: 16px;
+  }
 
-    .hero-image {
-        bottom: 0;
-    }
+  .hero-image {
+    bottom: 0;
+  }
 
-    .csf-community-section {
-        margin-left: 20px;
-        padding: 40px 0;
-        border-radius: 0 0 0px 60px;
-    }
+  .csf-community-section {
+    margin-left: 20px;
+    padding: 40px 0;
+    border-radius: 0 0 0px 60px;
+  }
 
-    .about-community {    
-        font-size: 15px;    
-    }
+  .about-community {
+    font-size: 15px;
+  }
 
-    .community-card {
-        margin-bottom: 16px;
-        height: auto;
-        border-radius: 20px;
-    }
+  .community-card {
+    margin-bottom: 16px;
+    height: auto;
+    border-radius: 20px;
+  }
 
-    .community-image img {
-        width: 80px;
-        height: 80px;
-    }
+  .community-image img {
+    width: 80px;
+    height: 80px;
+  }
 
-    .community-button {
-        width: 60px;
-        height: 60px;
-        border-radius: 18px;
-    }
+  .community-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+  }
 
-    .announcement-date {    
-        font-size: 15px;    
-    }
+  .announcement-date {
+    font-size: 15px;
+  }
 
-    .announcement-title {
-        font-size: 22px;
-    }
+  .announcement-title {
+    font-size: 22px;
+  }
 
-    .announcement-description {
-        font-size: 15px;
-        line-height: 24px;
-    }
+  .announcement-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
 
-    .page-button .slide-btn {
-        width: 45px;
-        height: 45px;
-    }
+  .page-button .slide-btn {
+    width: 45px;
+    height: 45px;
+  }
 
-    .blog-title {
-        font-size: 20px;
-        line-height: 26px;
-    }
+  .blog-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
 
-    .why-choose-us-content .page-title,
-    .faqs-section .page-title {
-        margin-bottom: 30px;
-    }
+  .why-choose-us-content .page-title,
+  .faqs-section .page-title {
+    margin-bottom: 30px;
+  }
 
-    .choose-description ul li .dot img {
-        width: 20px;
-        height: 20px;
-    }
+  .choose-description ul li .dot img {
+    width: 20px;
+    height: 20px;
+  }
 
-    .choose-description ul li .text {
-        font-size: 15px;
-    }
+  .choose-description ul li .text {
+    font-size: 15px;
+  }
 
-    .why-choose-us-image img {
-        width: 100%;
-        height: 100%;
-        margin-top: 22px;
-    }
+  .why-choose-us-image img {
+    width: 100%;
+    height: 100%;
+    margin-top: 22px;
+  }
 
-    .faq-section button {
-        text-align: left;
-        font-size: 16px;
-    }
+  .faq-section button {
+    text-align: left;
+    font-size: 16px;
+  }
 
-    .join-community-content {
-        margin-bottom: 22px;
-    }
+  .join-community-content {
+    margin-bottom: 22px;
+  }
 }
 
 /* Large devices (desktops) */
 @media (min-width: 992px) and (max-width: 1199px) {
-    .hero-content .hero-subtitle {
-        font-size: 18px;
-        padding: 8px 20px;
-    }
+  .hero-content .hero-subtitle {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
 
-    .hero-content .hero-title {
-        font-size: 54px;
-        font-weight: bold;
-        margin: 18px 0;
-        line-height: normal;
-    }
+  .hero-content .hero-title {
+    font-size: 54px;
+    font-weight: bold;
+    margin: 18px 0;
+    line-height: normal;
+  }
 
-    .hero-content .hero-description {
-        font-size: 16px;
-    }
+  .hero-content .hero-description {
+    font-size: 16px;
+  }
 
-    .csf-community-section {
-        margin-left: 20px;
-        padding: 40px 0;
-        border-radius: 0 0 0px 60px;
-    }
+  .csf-community-section {
+    margin-left: 20px;
+    padding: 40px 0;
+    border-radius: 0 0 0px 60px;
+  }
 }
 
 /* Extra large devices (large desktops) */
 @media (min-width: 1200px) and (max-width: 1399px) {
-    .card-border {
-        height: auto;
-        margin-bottom: 0;
-        padding: 30px 18px;
-    }
+  .card-border {
+    height: auto;
+    margin-bottom: 0;
+    padding: 30px 18px;
+  }
 
-    .announcement-image {
-        height: auto;
-    }
+  .announcement-image {
+    height: auto;
+  }
 
-    .announcement-description {
-        line-height: 26px;
-        font-size: 15px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-    }
+  .announcement-description {
+    line-height: 26px;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
 }

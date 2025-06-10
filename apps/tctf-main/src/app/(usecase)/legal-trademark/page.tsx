@@ -1,12 +1,12 @@
-import LegaltradmarcontentkPage from "@/app/entities/Legal-Tradmark-Content/page";
+import LegaltradmarcontentkPage from "../../entities/Legal-Tradmark-Content/page";
 import React from "react";
 
 const LegaltradmarkPage = () => {
-    return (
-        <>
-        <LegaltradmarcontentkPage/>
-        </>
-    );
+  return (
+    <>
+      <LegaltradmarcontentkPage />
+    </>
+  );
 };
 
 export default LegaltradmarkPage;

@@ -1,117 +1,117 @@
 .common-sidebar {
-    background-color: #FAFAFA;
-    border: 1px solid #E5E5E5;
-    border-radius: 8px;
-    padding: 30px 20px;
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 30px 20px;
 }
 
 h4.sidebar-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    border-bottom: 1px solid #E5E5E5;
-    padding-bottom: 16px
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 16px;
 }
 
 .sidebar-dropdown {
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #FAFAFA;
-    padding: 0 10px;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--foreground);
-    cursor: pointer;
-    width: 100%;
-    border-radius: 0;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--foreground);
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0;
 }
 
 .sidebar-dropdown:hover {
-    background-color: var(--button);
-    color: var(--background);
+  background-color: var(--button);
+  color: var(--background);
 }
 
 .dropdown-content {
-    background-color: #ffffff;
-    padding: 5px 20px;
+  background-color: #ffffff;
+  padding: 5px 20px;
 }
 
 .dropdown-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .dropdown-content ul li {
-    height: 40px;
-    display: flex;
-    align-items: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown-content ul li a {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--foreground);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--foreground);
 }
 
 .dropdown-content ul li a:hover {
-    color: var(--button);
+  color: var(--button);
 }
 
 .dropdown-button.active .sidebar-dropdown {
-    background-color: var(--button);
-    color: var(--background);
+  background-color: var(--button);
+  color: var(--background);
 }
 
 .dropdown-button.active .sidebar-dropdown svg {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .dropdown-button.active .dropdown-content {
-    max-height: 500px;
-    /* large enough to fit full content */
-    opacity: 1;
-    transform: scaleY(1);
-    padding: 5px 20px;
-    pointer-events: auto;
+  max-height: 500px;
+  /* large enough to fit full content */
+  opacity: 1;
+  transform: scaleY(1);
+  padding: 5px 20px;
+  pointer-events: auto;
 }
 
 .sidebar-dropdown svg {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .dropdown-content {
-    background-color: #ffffff;
-    padding: 0 20px;
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transform: scaleY(0.95);
-    transform-origin: top;
-    transition: all 0.3s ease;
-    pointer-events: none;
+  background-color: #ffffff;
+  padding: 0 20px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: scaleY(0.95);
+  transform-origin: top;
+  transition: all 0.3s ease;
+  pointer-events: none;
 }
 
 .sidebar-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar-content ul li a {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--foreground);
-    height: 40px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--foreground);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
 }
 
 .sidebar-content ul li a:hover {
-    background-color: var(--button);
-    color: var(--background);
+  background-color: var(--button);
+  color: var(--background);
 }
