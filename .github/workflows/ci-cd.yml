@@ -103,7 +103,7 @@ jobs:
   
       - name: Run Grype scan
         run: |
-          grype dir:. --fail-on high --config .grype.yaml
+          grype dir:. --fail-on high,critical --config .grype.yaml
 
   unit-test:
     needs: [lint, security-check]
