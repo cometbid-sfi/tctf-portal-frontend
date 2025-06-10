@@ -4,28 +4,28 @@ on:
   push:
     branches: [dev, uat, staging, preprod, main]
     paths:
-      - 'apps/**'
-      - 'libs/**'
-      - 'packages/**'
+      - "apps/**"
+      - "libs/**"
+      - "packages/**"
     #paths-ignore:
-      #- '**/*.md'
-      #- '**/*.test.ts'
-      #- '**/*.spec.ts'
-      #- 'apps/**/tests/**'
+    #- '**/*.md'
+    #- '**/*.test.ts'
+    #- '**/*.spec.ts'
+    #- 'apps/**/tests/**'
   pull_request:
     branches: [dev, uat, staging, preprod, main]
     paths:
-      - 'apps/**'
-      - 'libs/**'
-      - 'packages/**'
+      - "apps/**"
+      - "libs/**"
+      - "packages/**"
     #paths-ignore:
-      #- '**/*.md'
-      #- '**/*.test.ts'
-      #- '**/*.spec.ts'
-      #- 'apps/**/tests/**'
+    #- '**/*.md'
+    #- '**/*.test.ts'
+    #- '**/*.spec.ts'
+    #- 'apps/**/tests/**'
 
 env:
-  NODE_VERSION: '20.x'
+  NODE_VERSION: "20.x"
 
 jobs:
   setup:
@@ -49,7 +49,7 @@ jobs:
           echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
 
       - name: Setup pnpm cache
-        uses: actions/cache@v4 
+        uses: actions/cache@v4
         with:
           path: ${{ env.STORE_PATH }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -94,15 +94,12 @@ jobs:
         run: pnpm audit
 
       #- name: Run Snyk security scan
-        #uses: snyk/actions/node@master
-        #env:
-          #SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-      - name: Install Grype
+      #uses: snyk/actions/node@master
+      #env:
+      #SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      - name: Install and run Grype scan
         run: |
           curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
-  
-      - name: Run Grype scan
-        run: |
           grype dir:. --fail-on high,critical --config .grype.yaml
 
   unit-test:
@@ -117,11 +114,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'pnpm'
-          
+          cache: "pnpm"
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      
+
       - name: Build
         run: pnpm build-all
 
@@ -160,7 +157,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -170,7 +167,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-      
+
           # Restore Cypress binary cache
       - name: Cache Cypress binary
         uses: actions/cache@v4
@@ -203,7 +200,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        app: ['tctf-dashboard', 'tctf-main']  # List your apps that need deployment
+        app: ["tctf-dashboard", "tctf-main"] # List your apps that need deployment
 
     steps:
       - uses: actions/checkout@v4
@@ -254,7 +251,7 @@ jobs:
           else
             PROD_FLAG=""
           fi
-          
+
           # Get the correct site ID and build directory based on the app
           case ${{ matrix.app }} in
             "tctf-dashboard")
