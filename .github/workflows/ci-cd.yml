@@ -91,7 +91,12 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Run security audit
-        run: pnpm audit --no-exit-code
+        run: |
+          pnpm audit
+          EXIT_CODE=$?
+          if [ $EXIT_CODE -gt 1 ]; then
+            exit $EXIT_CODE
+          fi
 
       #- name: Run Snyk security scan
       #uses: snyk/actions/node@master
