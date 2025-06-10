@@ -1,0 +1,108 @@
+.customBox {
+  background-color: #F7F6F9;
+  border-left: 2px solid #076BB6;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.icon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.text {
+  font-size: 12px;
+  color: #076BB6;
+}
+
+.box-main-text{
+    margin-top: 80px;
+}
+.info-text{
+    font-size: 12px;
+    line-height: 18px;
+   color: #076BB6 !important;
+}
+
+.info-box{
+    border-left: 3px solid #076BB6 !important;
+
+}
+
+.mailing-heding{
+    font-size: 50px;
+    font-weight: bold;
+    color: #2C2C2E;
+}
+
+.maling-list-text-dicription{
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--lightTitle);
+}
+
+.mailing-list-card-text{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.list-unstyled li a {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.list-unstyled li a:hover {
+    background-color: var(--primary);
+    color: var(--background) !important;
+    border-radius: 5px;
+}
+
+.login-box{
+    font-size: 20px;
+}
+
+.text-box{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.btn-login-text{
+    background-color: var(--primary);
+    color: var(--background);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.table-heding-1{
+    background-color: var(--primary) !important;
+    color: var(--background) !important;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.table-heding-2{
+    background-color: var(--primary) !important;
+    color: var(--background) !important;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.table-data{
+    font-size: 14px;
+    color: var(--button) !important;
+}
+
+.table-data-2{
+    font-size: 14px;
+ color: var(--foreground) !important;
+}

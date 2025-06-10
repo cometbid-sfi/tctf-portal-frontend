@@ -1,0 +1,15 @@
+.client-logo {
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.client-logo:hover {
+  border: 1px solid var(--button);
+}

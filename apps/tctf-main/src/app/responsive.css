@@ -1,0 +1,261 @@
+/* Extra small devices (phones) */
+@media (max-width: 575px) {
+    .hide_mobile {
+        display: none;
+    }
+
+    .show_mobile {
+        display: block !important;
+    }
+
+    .mt-80 {
+        margin-top: 50px;
+    }
+
+    .navbar-brand img {
+        max-height: 80px;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        z-index: 9999;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .nav-link {
+        height: auto;
+    }
+
+    .page-title h2 {
+        font-size: 30px;
+    }
+
+    .hero-content .hero-title {
+        font-size: 42px;
+        font-weight: bold;
+        margin: 18px 0;
+        line-height: normal;
+    }
+
+    .hero-content .hero-description {
+        font-size: 16px;
+    }
+
+    .sec-header p {
+        font-size: 14px;
+    }
+
+    .page-title h3 {
+        font-size: 22px;
+    }
+
+    .hero-section-common {
+        height: auto;
+    }
+
+    .banner-section {
+        height: 420px;
+    }
+
+    h2.hero-title {
+        font-size: 40px;
+    }
+
+    .form-content h2 {
+        font-size: 26px;
+    }
+
+    .otp-input {
+        width: 100%;
+        height: 42px;
+    }
+
+    .about-content {
+        margin-top: 20px;
+    }
+
+    .banner-vendor-content {
+        width: 100%;
+    }
+
+    .client-logo {
+        margin-bottom: 18px;
+        height: 100px !important;
+    }
+
+    .card-design-box {
+        margin-bottom: 18px;
+    }
+
+    .logincontent {
+        padding: 30px 20px;
+    }
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .hide_mobile {
+        display: none;
+    }
+
+    .show_mobile {
+        display: block !important;
+    }
+
+    .mt-80 {
+        margin-top: 60px;
+    }
+
+    .navbar-brand img {
+        max-height: 80px;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        z-index: 9999;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .nav-link {
+        height: auto;
+    }
+
+    .page-title h2 {
+        font-size: 34px;
+    }
+
+    .hero-content .hero-title {
+        font-size: 46px;
+        font-weight: bold;
+        margin: 18px 0;
+        line-height: normal;
+    }
+
+    .hero-content .hero-description {
+        font-size: 16px;
+    }
+
+    .page-title h3 {
+        font-size: 26px;
+    }
+
+    .about-content {
+        margin-top: 20px;
+    }
+
+    .banner-vendor-content {
+        width: 100%;
+        margin-top: 10px
+    }
+
+    .client-logo {
+        margin-bottom: 18px;
+        height: 100px !important;
+    }
+
+    .card-design-box {
+        margin-bottom: 18px;
+    }
+
+    .logincontent {
+        padding: 30px 20px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hide_mobile {
+        display: none;
+    }
+
+    .show_mobile {
+        display: block !important;
+    }
+
+    .mt-80 {
+        margin-top: 70px;
+    }
+
+    .navbar-brand img {
+        max-height: 80px;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        z-index: 9999;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .nav-link {
+        height: auto;
+    }
+
+    .page-title h2 {
+        font-size: 40px;
+    }
+
+    .hero-content .hero-title {
+        font-size: 50px;
+        font-weight: bold;
+        margin: 18px 0;
+        line-height: normal;
+    }
+
+    .hero-content .hero-description {
+        font-size: 16px;
+    }
+
+    .page-title h3 {
+        font-size: 28px;
+    }
+
+    .client-logo {
+        margin-bottom: 18px;
+        height: 100px !important;
+    }
+
+    .card-design-box {
+        margin-bottom: 18px;
+    }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-link {
+        margin-right: 0;
+    }
+
+    .hero-content .hero-title {
+        font-size: 54px;
+        font-weight: bold;
+        margin: 18px 0;
+        line-height: normal;
+    }
+
+    .hero-content .hero-description {
+        font-size: 16px;
+    }
+
+    button.btn.btn-header {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}

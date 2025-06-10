@@ -1,0 +1,14 @@
+.box-main-text {
+  margin-top: 80px;
+}
+.support-list {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--lightTitle);
+}
+
+.support-subtitle-text {
+  color: var(--orangeColor) !important;
+  font-size: 22px;
+  font-weight: bold;
+}

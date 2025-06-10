@@ -1,0 +1,685 @@
+.slider-nevigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.slider-nevigation button {
+  background-color: var(--background);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  transition: background-color 0.3s ease;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1;
+}
+
+.slider-dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-dots button.active {
+  background-color: #fff;
+}
+
+.page-navigation a,
+.page-navigation span {
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--foreground);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-bar {
+  position: relative;
+  width: 450px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  font-size: 16px;
+  color: var(--foreground);
+  background-color: var(--background);
+  transition: border-color 0.3s ease;
+  height: 60px;
+  width: 100%;
+}
+
+.search-bar input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.search-bar button {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: var(--secondary) !important;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--foreground);
+  transition: color 0.3s ease;
+  border-radius: 40px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.participate-item {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 40px 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.our-services-section {
+  background: var(--lightBackground);
+  margin: 80px 50px;
+  border-radius: 50px;
+  padding: 60px 80px;
+}
+
+.our-services-item {
+  background-color: var(--background);
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.our-services-icon img {
+  margin-bottom: 40px;
+}
+
+.our-services-item h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.our-services-item p {
+  color: var(--lightTitle);
+  line-height: 30px;
+}
+
+.project-resources-item {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 40px 40px;
+}
+
+.project-resources-item h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--button);
+}
+
+.project-resources-item p {
+  color: var(--lightTitle);
+  line-height: 30px;
+}
+
+.project-resources-item .btn {
+  padding: 0;
+  color: var(--button);
+  font-size: 14px;
+}
+
+.btn-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.bg-image {
+  background-image: url("../../../assets/Images/bg-blue.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  padding: 60px 30px;
+  color: var(--background);
+}
+
+.brand-logo {
+  text-align: center;
+}
+
+.brand-logo img {
+  width: 180px;
+  height: 100px;
+}
+
+.banner-section {
+  background-image: url("../../../assets/Images/bg-banner.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+}
+
+.border-box-common {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 40px 16px;
+  height: 100%;
+}
+
+.page-title h2 {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+.page-title h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.client-logo img {
+  width: 180px;
+}
+
+.client-logo-partner img {
+  width: 180px;
+}
+
+.banner-cloud-native {
+  background-image: url("../../../assets/Images/cold-native.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+}
+
+.image-box {
+  height: 200px;
+  background-image: url("../../../assets/Images/prject-nwe-img-c.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+
+.image-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.heading {
+  text-align: center;
+  color: #ffffff;
+  padding: 70px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.border-box-common .card-box {
+  padding: 40px 16px;
+}
+
+.box-content-text h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: var(--foreground);
+  line-height: 30px;
+}
+
+.box-content-text p {
+  color: var(--lightTitle);
+  line-height: auto;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.box-content-text .card-text {
+  font-size: 15px;
+}
+
+.box-content-text .card-heading {
+  margin: 10px 0px;
+}
+
+.box-icon-Main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom-icon-img {
+  border-radius: 4px;
+  padding: 0px 2px;
+}
+
+.timeicon-text {
+  color: #1a14a7;
+  font-size: 12px;
+  position: relative;
+  padding-left: 5px;
+}
+
+.border-box-common {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 40px 16px;
+  height: 100%;
+}
+
+.border-box-common .box-icon {
+  margin: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.timeicon-box {
+  background-color: #e9e8ff;
+  padding: 0px 8px;
+  border-radius: 4px;
+}
+
+.box-icon-csf .imglogo {
+  width: 50px;
+  height: 50px;
+}
+
+.banner-edgeiot {
+  background-image: url("../../../assets/Images/Edge-img.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+}
+
+.financial-banner {
+  background-image: url("../../../assets/Images/financial-and-banking.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+}
+
+.robotics-banner {
+  background-image: url("../../../assets/Images/robotics-ai-img.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+}
+
+.banner-automotive-mobility {
+  background-image: url("../../../assets/Images/automotive-mobile-img.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+}
+
+.banner-agro-tech {
+  background-image: url("../../../assets/Images/agro-tech-img.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+}
+
+.banner-blockchain {
+  background-image: url("../../../assets/Images/blockchain-img.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+}
+
+/* responsive css start */
+
+/* Extra small devices (phones) */
+@media (max-width: 767px) {
+  .slider-nevigation button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .participate-item {
+    margin-bottom: 22px;
+  }
+
+  .our-services-section {
+    margin: 40px 0px;
+    padding: 40px 0px;
+    border-radius: 0;
+  }
+
+  .our-services-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .our-services-item p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .project-resources-item {
+    padding: 30px 30px;
+    margin-bottom: 22px;
+    height: auto;
+  }
+
+  .btn-center {
+    margin-top: 20px;
+  }
+
+  .page-description {
+    font-size: 14px;
+  }
+
+  .participate-icon img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .project-title h3 {
+    font-size: 20px;
+  }
+
+  .page-navigation a,
+  .page-navigation span {
+    font-size: 15px;
+    margin-right: 6px;
+  }
+
+  .banner-blockchain {
+    height: auto;
+  }
+
+  .banner-agro-tech {
+    height: auto;
+  }
+
+  .banner-automotive-mobility {
+    height: auto;
+  }
+
+  .banner-edgeiot {
+    height: auto;
+  }
+
+  .financial-banner {
+    height: auto;
+  }
+
+  .banner-cloud-native {
+    height: auto;
+  }
+
+  .robotics-banner {
+    height: auto;
+  }
+}
+
+/* Small devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider-nevigation button {
+    width: 45px;
+    height: 45px;
+  }
+
+  .participate-item {
+    margin-bottom: 22px;
+  }
+
+  .our-services-section {
+    margin: 50px 0px;
+    padding: 40px 0px;
+    border-radius: 0;
+  }
+
+  .our-services-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .our-services-item p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .project-resources-item {
+    padding: 30px 30px;
+  }
+
+  .btn-center {
+    margin-top: 20px;
+  }
+
+  .page-description {
+    font-size: 14px;
+  }
+
+  .participate-icon img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .project-title h3 {
+    font-size: 20px;
+  }
+
+  .banner-blockchain {
+    height: 615px;
+  }
+
+  .banner-agro-tech {
+    height: 615px;
+  }
+
+  .banner-automotive-mobility {
+    height: 615px;
+  }
+
+  .banner-edgeiot {
+    height: 615px;
+  }
+
+  .financial-banner {
+    height: 615px;
+  }
+
+  .banner-cloud-native {
+    height: 615px;
+  }
+
+  .robotics-banner {
+    height: 615px;
+  }
+}
+
+/* Medium devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .participate-icon img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .our-services-section {
+    margin: 50px 0px;
+    padding: 40px 0px;
+    border-radius: 0;
+  }
+
+  .our-services-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .our-services-item {
+    padding: 30px;
+  }
+
+  .our-services-item p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .project-title h3 {
+    font-size: 20px;
+  }
+
+  .banner-blockchain {
+    height: 615px;
+  }
+
+  .banner-agro-tech {
+    height: 615px;
+  }
+
+  .banner-automotive-mobility {
+    height: 615px;
+  }
+
+  .banner-edgeiot {
+    height: 615px;
+  }
+
+  .financial-banner {
+    height: 615px;
+  }
+
+  .banner-cloud-native {
+    height: 615px;
+  }
+
+  .robotics-banner {
+    height: 615px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .banner-blockchain {
+    height: 615px;
+  }
+
+  .banner-agro-tech {
+    height: 615px;
+  }
+
+  .banner-automotive-mobility {
+    height: 615px;
+  }
+
+  .banner-edgeiot {
+    height: 615px;
+  }
+
+  .financial-banner {
+    height: 615px;
+  }
+
+  .banner-cloud-native {
+    height: 615px;
+  }
+
+  .robotics-banner {
+    height: 615px;
+  }
+}

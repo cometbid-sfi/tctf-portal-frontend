@@ -1,0 +1,407 @@
+.banner-bg-image {
+    background-image: url("../../../assets//Images/collaborate-bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 570px;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    color: var(--background);
+    position: relative;
+}
+
+.banner-bg-image::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    z-index: 0;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.banner-content p {
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.border-box-d {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.box-icon {
+    background-color: var(--foreground);
+    color: var(--background);
+    border-radius: 10px;
+    min-width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.box-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--button);
+}
+
+.box-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--lightTitle);
+    margin-bottom: 0;
+}
+
+.count {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: transparent;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px white; 
+}
+
+.btn-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.client-logo {
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+.start-collaboration {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+.table-transprent {
+    background-color: transparent !important;
+}
+
+.table-transprent th,
+.table-transprent td {
+    background-color: transparent !important;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.btn-black {
+    background-color: var(--foreground);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: none;
+    border: 1px solid var(--foreground);
+}
+
+.btn-yellow {
+    background-color: var(--secondary);
+    color: #000000;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: none;
+    border: 1px solid var(--secondary);
+}
+
+.btn-border {
+    background-color: transparent;
+    color: var(--background);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: none;
+    border: 1px solid var(--background);
+}
+
+.table-transprent th:nth-child(2), .table-transprent th:nth-child(3) {
+    text-align: center;
+    border-left: 1px solid #ccc;
+}
+
+.table-transprent td:nth-child(2), .table-transprent td:nth-child(3) {
+    text-align: center;
+    border-left: 1px solid #ccc;
+}
+
+.table-transprent tr:last-child td {
+    border-bottom: none;
+}
+
+.resource-list p {
+    font-weight: bold;
+}
+
+.resource-list ul {
+    /* padding: 0; */
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resource-list li::marker {
+    color: var(--button);
+}
+
+.resource-list li a {
+    text-decoration: none;
+    color: var(--button);
+    font-size: 12px;
+}
+
+.btn-outline {
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--foreground);
+    width: 100%;
+}
+
+.btn-blue-color {
+    background-color: var(--button);
+    color: var(--background);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: none;
+    border: 1px solid var(--button);
+    width: 100%;
+}
+
+ .collabration-text{
+    color: var(--background) !important;
+}
+
+/* .Collaborating-text-d{
+    color: var(--background) !important
+} */
+
+/* Extra small devices (phones) */
+@media (max-width: 767px) {
+    .slider-nevigation button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .participate-item {
+        margin-bottom: 22px;
+    }
+
+    .our-services-section {
+        margin: 40px 0px;
+        padding: 40px 0px;
+        border-radius: 0;
+    }
+
+    .our-services-icon img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .our-services-item p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .project-resources-item {
+        padding: 30px 30px;
+        margin-bottom: 22px;
+        height: auto;
+    }
+
+    .btn-center {
+        margin-top: 20px;
+    }
+
+    .page-description {
+        font-size: 14px;
+    }
+
+    .participate-icon img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .project-title h3 {
+        font-size: 20px;
+    }
+
+    .banner-bg-image {
+        height: 100%;
+        padding: 40px 30px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .box-inner {
+        flex-wrap: wrap;
+    }
+
+    .box-icon {
+        margin-left: 0;
+        min-width: 120px;
+        height: 120px;
+        margin-bottom: 0;
+    }
+
+    .box-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .count {
+        font-size: 22px;
+    }
+
+    .client-logo {
+        margin-bottom: 22px;
+        height: 100px;
+    }
+
+    .page-navigation a, .page-navigation span {
+        font-size: 15px;
+        margin-right: 6px;
+    }
+}
+
+/* Small devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .slider-nevigation button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .participate-item {
+        margin-bottom: 22px;
+    }
+
+    .our-services-section {
+        margin: 50px 0px;
+        padding: 40px 0px;
+        border-radius: 0;
+    }
+
+    .our-services-icon img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .our-services-item p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .project-resources-item {
+        padding: 30px 30px;
+    }
+
+    .btn-center {
+        margin-top: 20px;
+    }
+
+    .page-description {
+        font-size: 14px;
+    }
+
+    .participate-icon img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .project-title h3 {
+        font-size: 20px;
+    }
+
+    .client-logo {
+        margin-bottom: 22px;
+        height: 100px;
+    }
+}
+
+/* Medium devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .participate-icon img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .our-services-section {
+        margin: 50px 0px;
+        padding: 40px 0px;
+        border-radius: 0;
+    }
+
+    .our-services-icon img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .our-services-item {
+        padding: 30px;
+    }
+
+    .our-services-item p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .project-title h3 {
+        font-size: 20px;
+    }
+}

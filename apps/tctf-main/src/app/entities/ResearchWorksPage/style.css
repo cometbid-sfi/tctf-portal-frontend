@@ -1,0 +1,267 @@
+.custom-text {
+  color: var(--secondary);
+}
+
+.why-choose-us {
+  margin-top: 220px;
+}
+
+.why-choose {
+  margin-top: 180px;
+}
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* spacing between images */
+  max-width: 100%;
+}
+
+.rounded-5 {
+  border-radius: 12px; /* adjust as needed */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.join-community {
+  margin-top: 190px;
+}
+
+.typewriter-wrapper {
+  width: fit-content;
+  border-right: 2px solid #333;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bouncing-typewriter {
+  display: inline-block;
+  font-size: 36px;
+  font-family: monospace;
+  color: #333;
+  animation:
+    typing 9s steps(30, end) infinite,
+    blink 0.7s step-end infinite;
+  font-weight: 800px;
+  color: var(--bs-heading-color);
+  margin-top: 10px;
+}
+.border-card {
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.bouncing-typewriter span {
+  color: var(--secondary);
+}
+.questionimg img {
+  width: 25px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.faq-question-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-heading h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+
+.team-heading p {
+  font-size: 16px;
+  color: #555;
+}
+
+.team-member-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-image {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-info {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.team-info h4 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.team-info p {
+  font-size: 14px;
+  color: #666;
+}
+
+/*  */
+
+.section-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #6c63ff;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.section-heading {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.section-paragraph {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.gradient-btn {
+  background: linear-gradient(to right, #6c63ff, #00bfa6);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gradient-btn:hover {
+  opacity: 0.9;
+}
+
+.imgreresearch {
+  width: 430px;
+  height: auto;
+}
+
+.border-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+.boxiconimg {
+  flex-shrink: 0;
+}
+.border-box {
+  background-color: #1a14a7;
+  color: white;
+}
+
+.Researchtext {
+  font-size: 24px;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 28ch; /* Adjust to total characters */
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@media (max-width: 768px) {
+  .grid-2x2 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .why-choose-us,
+  .why-choose,
+  .join-community {
+    margin-top: 120px;
+  }
+}
+
+.rounded-5 {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Typewriter Responsive */
+.typewriter-wrapper {
+  width: fit-content;
+  border-right: 2px solid #333;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.bouncing-typewriter {
+  display: inline-block;
+  font-size: 2.5vw;
+  font-family: monospace;
+  font-weight: 800;
+  animation:
+    typing 9s steps(30, end) infinite,
+    blink 0.7s step-end infinite;
+  color: var(--bs-heading-color);
+}
+
+.bouncing-typewriter span {
+  color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+  .bouncing-typewriter {
+    font-size: 19px !important;
+  }
+  .border-button button {
+    margin-bottom: 20px;
+  }
+  .page-title h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bouncing-typewriter {
+    font-size: 19px !important;
+  }
+  .page-title h2 {
+    font-size: 25px;
+  }
+  .border-button button {
+    margin-bottom: 20px;
+  }
+}
